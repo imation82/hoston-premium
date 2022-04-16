@@ -47,4 +47,54 @@ h6 {
   font-weight: 700;
   line-height: 20px;
 }
+
+.btn, .btn-hoston-primary, .btn-hoston-outline {
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 2px;
+}
+
+.btn-hoston-primary {
+  background-color: #F7421E;
+}
+
+.btn-hoston-primary:hover,
+.btn-hoston-primary:focus,
+.btn-hoston-primary:active {
+  color: #FFFFFF;
+  background-color: #DB3514;
+}
+
+.btn-hoston-outline {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+}
+
+.btn-hoston-outline:hover,
+.btn-hoston-outline:focus,
+.btn-hoston-outline:active {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  height: 100%;
+  padding-top: 215px;
+  padding-bottom: 215px;
+}
+
+.header__content h1 {
+  color: #FFFFFF;
+}
+
+.header__content p {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
 /*# sourceMappingURL=custom.css.map */

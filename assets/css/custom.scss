@@ -2,9 +2,13 @@
 @import "color";
 @import "mixin";
 
+// Body
+
 body {
     @include fontStyle('Roboto', 14px, 400, 26px);   
 }
+
+// Typography
 
 h1 {
     @include fontStyle('Roboto', 56px, 700, 60px);
@@ -30,4 +34,56 @@ h6 {
     @include fontStyle('Roboto', 18px, 700, 20px);
 }
 
+// Custom buttons
+
+.btn {
+    color: $white;
+    padding: 12px 20px;
+    border-radius: 2px;    
+}
+
+.btn-hoston-primary {
+    @extend .btn;
+    background-color: $primary;
+}
+
+.btn-hoston-primary:hover,
+.btn-hoston-primary:focus,
+.btn-hoston-primary:active {
+    color: $white;
+    background-color: $secondary;
+}
+
+.btn-hoston-outline {
+    @extend .btn;
+    background-color: transparent;
+    border: 1px solid $white;
+}
+
+.btn-hoston-outline:hover,
+.btn-hoston-outline:focus,
+.btn-hoston-outline:active {
+    color: $white;
+    background-color: rgba(255,255,255,0.10);
+}
+
 // Header
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    height: 100%;
+    padding-top: 215px;
+    padding-bottom: 215px;    
+
+    &__content { 
+        h1 {
+            color: $white;
+        }
+        p {
+            @include fontStyle('Roboto', 20px, 400, 32px);
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+}
