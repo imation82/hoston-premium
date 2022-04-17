@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
 body {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -125,8 +125,8 @@ section {
 }
 
 .btn, .btn-hoston-primary, .btn-hoston-outline {
-  font-family: "Jost";
-  font-size: 20px;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
   font-weight: 300;
   color: #FFFFFF;
   padding: 8px 20px;
@@ -161,9 +161,9 @@ section {
 }
 
 .btn-hoston-link {
-  font-family: "Jost";
-  font-size: 20px;
-  font-weight: 400;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 300;
   line-height: 22px;
   color: #000000;
   position: relative;
@@ -172,12 +172,12 @@ section {
 }
 
 .btn-hoston-link::before {
-  content: "\F138";
+  content: "\F231";
   font-family: 'bootstrap-icons';
   position: absolute;
-  font-size: 14px;
-  right: -25px;
-  font-weight: 600;
+  font-size: 10px;
+  right: -20px;
+  font-weight: 400;
 }
 
 .header {
@@ -195,7 +195,7 @@ section {
 .header__content p {
   color: #FFFFFF;
   opacity: 0.8;
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-size: 20px;
   font-weight: 300;
   line-height: 35px;
@@ -206,7 +206,7 @@ section {
   background-color: #FFFFFF;
   padding: 50px;
   border-radius: 10px;
-  margin-top: -60px;
+  margin-top: -100px;
   -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
           box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
   margin-left: auto;
@@ -227,7 +227,7 @@ section {
   border: 1px solid #D2D3D3;
   padding: 10px 10px 10px 40px;
   border-radius: 2px;
-  height: 48px;
+  height: 45px;
 }
 
 .search__input:focus {
@@ -249,41 +249,44 @@ section {
   background-color: #F0FAE6;
 }
 
-.service-block {
+.services__block {
   background: #FFFFFF;
   padding: 55px;
-  margin-bottom: 30px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 8px 20px -2px rgba(33, 40, 51, 0.05);
           box-shadow: 0px 8px 20px -2px rgba(33, 40, 51, 0.05);
 }
 
-.service-block:hover {
+.services__block:hover {
   background: linear-gradient(93.88deg, #870C9B -1.94%, #1A0B75 79.12%);
   color: #FFFFFF;
 }
 
-.service-block:hover i,
-.service-block:hover p {
+.services__block:hover i,
+.services__block:hover p {
   color: #FFFFFF;
 }
 
-.service-block:hover .service-block-btn a {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.service-block i {
+.services__block i {
   font-size: 70px;
   color: #202124;
 }
 
-.service-block .service-block-btn {
+.services__block--btn {
   margin-top: 40px;
 }
 
-.service-block .service-block-btn a:hover {
+.services__block--btn a:hover {
   color: #FFFFFF;
+}
+
+.services__block:hover .services__block--btn a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.support {
+  background-color: #F0FAE6;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -310,10 +313,15 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  h2 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+  }
   .section__style--1 h2 {
     font-size: 25px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 35px;
   }
   .section__style--1 h2::before, .section__style--1 h2::after {
     display: none;
@@ -321,7 +329,7 @@ section {
   .section__style--2 h2 {
     font-size: 25px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 35px;
   }
   .section__style--2 h2::before, .section__style--2 h2::after {
     display: none;
