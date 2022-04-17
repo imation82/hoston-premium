@@ -126,7 +126,7 @@ section {
 
 .btn, .btn-hoston-primary, .btn-hoston-outline {
   font-family: "Roboto Condensed";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: #FFFFFF;
   padding: 8px 20px;
@@ -219,7 +219,7 @@ section {
 }
 
 .search__input {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-size: 14px;
   font-weight: 400;
   color: #909192 !important;
@@ -227,7 +227,7 @@ section {
   border: 1px solid #D2D3D3;
   padding: 10px 10px 10px 40px;
   border-radius: 2px;
-  height: 45px;
+  height: 42px;
 }
 
 .search__input:focus {

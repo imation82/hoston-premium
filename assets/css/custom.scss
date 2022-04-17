@@ -109,7 +109,7 @@ section {
 // Custom buttons
 
 .btn {
-    @include fontStyle('Roboto Condensed', 18px, 300, null);
+    @include fontStyle('Roboto Condensed', 16px, 300, null);
     color: $white;
     padding: 8px 20px;
     border-radius: 2px;
@@ -204,13 +204,13 @@ section {
     }
 
     &__input {
-        @include fontStyle ('Roboto', 14px, 400, null);
+        @include fontStyle ('Roboto Condensed', 14px, 400, null);
         color: $black-400 !important;
         background-color: #F8F9F9;
         border: 1px solid $black-100;        
         padding: 10px 10px 10px 40px;
         border-radius: 2px;
-        height: 45px;
+        height: 42px;
         &:focus {
             box-shadow: none;
             border: 1px solid $black-100;
