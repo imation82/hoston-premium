@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap");
 body {
   font-family: "Roboto";
   font-size: 14px;
@@ -7,60 +8,83 @@ body {
 }
 
 h1 {
-  font-family: "Roboto";
+  font-family: "Jost";
   font-size: 56px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 60px;
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Jost";
   font-size: 44px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 52px;
 }
 
 h3 {
-  font-family: "Roboto";
+  font-family: "Jost";
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 40px;
 }
 
 h4 {
-  font-family: "Roboto";
+  font-family: "Jost";
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
 }
 
 h5 {
-  font-family: "Roboto";
+  font-family: "Jost";
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 24px;
 }
 
 h6 {
-  font-family: "Roboto";
+  font-family: "Jost";
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 20px;
 }
 
+.form-control::-webkit-input-placeholder {
+  color: #909192;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #909192;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #909192;
+}
+
+.form-control::placeholder {
+  color: #909192;
+}
+
 .btn, .btn-hoston-primary, .btn-hoston-outline {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 300;
   color: #FFFFFF;
-  padding: 12px 20px;
+  padding: 8px 20px;
   border-radius: 2px;
+}
+
+.btn:hover, .btn-hoston-primary:hover, .btn-hoston-outline:hover, .btn:focus, .btn-hoston-primary:focus, .btn-hoston-outline:focus, .btn:active, .btn-hoston-primary:active, .btn-hoston-outline:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-hoston-primary {
   background-color: #F7421E;
 }
 
-.btn-hoston-primary:hover,
-.btn-hoston-primary:focus,
-.btn-hoston-primary:active {
+.btn-hoston-primary:hover, .btn-hoston-primary:focus, .btn-hoston-primary:active {
   color: #FFFFFF;
   background-color: #DB3514;
 }
@@ -94,8 +118,43 @@ h6 {
   opacity: 0.8;
   font-family: "Roboto";
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 35px;
+}
+
+.search {
+  max-width: 820px;
+  background-color: #FFFFFF;
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: -60px;
+  -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+          box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search__icon {
+  padding: 0px 15px;
+  color: #909192;
+}
+
+.search__input {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #909192 !important;
+  background-color: #F8F9F9;
+  border: 1px solid #D2D3D3;
+  padding: 10px 10px 10px 40px;
+  border-radius: 2px;
+  height: 48px;
+}
+
+.search__input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #D2D3D3;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
