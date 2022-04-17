@@ -6,7 +6,9 @@
 // Body
 
 body {
-    @include fontStyle('Roboto', 14px, 400, 26px);   
+    @include fontStyle('Roboto', 16px, 400, 26px);
+    margin: 0;
+    padding: 0;
 }
 
 // Typography
@@ -35,10 +37,73 @@ h6 {
     @include fontStyle('Jost', 18px, 500, 20px);
 }
 
+p {
+    color: $black-600;
+    margin: 0;
+}
+
 // Common
 
 .form-control::placeholder {
     color: $black-400;
+}
+
+// Custom margin & padding
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+// Custom classes
+
+.section__style--1 {
+    h2 {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: url(../svg/headline-1.svg);
+            position: absolute;
+            top: -25px;
+            left: -55px;
+        }
+
+        &::after {
+            content: url(../svg/headline-2.svg);
+            position: absolute;
+            right: -55px;
+            top: 25px;
+        }
+    }       
+}
+
+.section__style--2 {
+    h2 {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: url(../svg/headline-3.svg);
+            position: absolute;
+            top: -25px;
+            left: -55px;
+        }
+
+        &::after {
+            content: url(../svg/headline-4.svg);
+            position: absolute;
+            right: -55px;
+            top: 25px;
+        }
+    }       
+}
+
+.section__dot {
+    color: $primary;
+    margin-right: 5px;
+}
+
+.sub-title {
+    max-width: 570px;
 }
 
 // Custom buttons
@@ -81,6 +146,23 @@ h6 {
 .btn-hoston-outline:active {
     color: $white;
     background-color: rgba(255,255,255,0.10);
+}
+
+.btn-hoston-link {
+    @include fontStyle('Jost', 20px, 400, 22px);
+    color: $black;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-hoston-link::before {
+    content: "\F138";
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    font-size: 14px;
+    right: -25px;
+    font-weight: 600;
 }
 
 // Header
@@ -143,9 +225,51 @@ h6 {
             font-weight: 500;
         }
         .list-inline-item:not(:last-child) {
-            margin-right: 2.5rem;
+            margin-right: 40px;
         }
     }
+}
+
+// Services
+
+.services {
+    background-color: $background-02;
+}
+
+.service-block {
+    background: $white;
+    padding: 55px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px -2px rgba(33, 40, 51, 0.05);
+
+    &:hover {
+        background: linear-gradient(93.88deg, #870C9B -1.94%, #1A0B75 79.12%);
+        color: $white;;
+    }
+
+    &:hover i,
+    &:hover p {
+        color: $white;
+    }
+
+    &:hover .service-block-btn a {
+        color: $white;
+        text-decoration: underline;
+    }
+
+    i {
+        font-size: 70px;
+        color: $black-900;
+    }
+
+    .service-block-btn {
+        margin-top: 40px;
+        a:hover {
+            color: $white;
+        }    
+    }
+
 }
 
 // Media queries
@@ -170,6 +294,28 @@ h6 {
             }
         }
     }
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section__style--1 {
+        h2 {
+            @include fontStyle(null, 25px, 500, 40px);
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+    .section__style--2 {
+        h2 {
+            @include fontStyle(null, 25px, 500, 40px);
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }    
 }
 
 @media (min-width:768px) and (max-width:991px) {
