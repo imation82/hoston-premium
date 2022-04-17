@@ -90,11 +90,48 @@ h6 {
 }
 
 .header__content p {
+  color: #FFFFFF;
+  opacity: 0.8;
   font-family: "Roboto";
   font-size: 20px;
   font-weight: 400;
-  line-height: 32px;
-  color: #FFFFFF;
-  opacity: 0.8;
+  line-height: 35px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .header__content h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .header__content p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .header__content h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .header__content p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header__content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
