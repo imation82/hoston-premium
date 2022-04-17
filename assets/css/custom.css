@@ -163,9 +163,9 @@ section {
 .btn-hoston-link {
   font-family: "Roboto Condensed";
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 22px;
-  color: #000000;
+  color: #909192;
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -282,7 +282,7 @@ section {
 
 .services__block:hover .services__block--btn a {
   color: #FFFFFF;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .support {

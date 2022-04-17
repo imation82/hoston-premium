@@ -149,8 +149,8 @@ section {
 }
 
 .btn-hoston-link {
-    @include fontStyle('Roboto Condensed', 16px, 300, 22px);
-    color: $black;
+    @include fontStyle('Roboto Condensed', 16px, 400, 22px);
+    color: $black-400;
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -260,7 +260,7 @@ section {
         }  
         &:hover .services__block--btn a {
             color: $white;
-            text-decoration: underline;
+            text-decoration: none;
         }              
     }
 }
