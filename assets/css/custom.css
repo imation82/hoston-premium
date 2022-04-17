@@ -157,6 +157,15 @@ h6 {
   border: 1px solid #D2D3D3;
 }
 
+.search__domain--pricing .list-inline-item {
+  color: #909192;
+  font-weight: 500;
+}
+
+.search__domain--pricing .list-inline-item:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
     padding-top: 100px;
@@ -169,6 +178,13 @@ h6 {
   .header__content p {
     font-size: 15px;
     line-height: 25px;
+  }
+  .search {
+    padding: 20px;
+  }
+  .search__domain--pricing .list-inline-item {
+    margin-right: 0 !important;
+    width: 24%;
   }
 }
 

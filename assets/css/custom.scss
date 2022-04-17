@@ -136,6 +136,18 @@ h6 {
     }
 }
 
+.search__domain {
+    &--pricing {
+        .list-inline-item {
+            color: $black-400;
+            font-weight: 500;
+        }
+        .list-inline-item:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+    }
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
@@ -145,6 +157,17 @@ h6 {
         &__content {
             h1 { @include fontStyle(null, 25px, null, 40px); }
             p { @include fontStyle(null, 15px, null, 25px); }
+        }
+    }
+    .search {
+        padding: 20px;
+    }
+    .search__domain {
+        &--pricing {
+            .list-inline-item {
+                margin-right: 0 !important;
+                width: 24%;
+            }
         }
     }
 }
