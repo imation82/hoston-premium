@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import "color";
 @import "mixin";
 
 // Body
 
 body {
-    @include fontStyle('Roboto Condensed', 16px, 400, 26px);
+    @include fontStyle('Fira Sans', 14px, 400, 26px);
     margin: 0;
     padding: 0;
 }
@@ -109,9 +109,9 @@ section {
 // Custom buttons
 
 .btn {
-    @include fontStyle('Roboto Condensed', 16px, 300, null);
+    @include fontStyle('Fira Sans', 14px, 300, null);
     color: $white;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 2px;
     &:hover,
     &:focus,
@@ -149,11 +149,11 @@ section {
 }
 
 .btn-hoston-link {
-    @include fontStyle('Roboto Condensed', 16px, 400, 22px);
-    color: $black-400;
+    @include fontStyle('Fira Sans', 13px, 400, 22px);
+    color: $black-600;
     position: relative;
     display: inline-block;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .btn-hoston-link::before {
@@ -181,7 +181,7 @@ section {
         p {
             color: $white;
             opacity: 0.8;
-            @include fontStyle('Roboto Condensed', 20px, 300, 35px);
+            @include fontStyle('Fira Sans', 16px, 400, 35px);
         }                          
     }
 }
@@ -204,7 +204,7 @@ section {
     }
 
     &__input {
-        @include fontStyle ('Roboto Condensed', 14px, 400, null);
+        @include fontStyle ('Fira Sans', 14px, 400, null);
         color: $black-400 !important;
         background-color: #F8F9F9;
         border: 1px solid $black-100;        
@@ -222,7 +222,7 @@ section {
     &--pricing {
         .list-inline-item {
             color: $black-400;
-            font-weight: 500;
+            font-weight: 400;
         }
         .list-inline-item:not(:last-child) {
             margin-right: 40px;
@@ -249,7 +249,7 @@ section {
             color: $white;
         }      
         i {
-            font-size: 70px;
+            font-size: 50px;
             color: $black-900;
         }
         &--btn {
@@ -262,6 +262,40 @@ section {
             color: $white;
             text-decoration: none;
         }              
+    }
+}
+
+// Plan 
+
+.accordion-item {
+    border: 1px solid #ECECEC;
+}
+.accordion-button {
+    @include fontStyle ('Jost', 20px, 400, null);
+    &:focus {
+        border-color: transparent;
+        box-shadow: none;
+    }
+    &::after {
+        font-family: "bootstrap-icons";
+        content: "\f4d7";
+        font-size: 28px;
+        color: $black-600;            
+        background-image: none;
+        transform: none;
+        display: flex;
+        align-items: center;            
+    }
+}
+.accordion-button:not(.collapsed) {
+    color: $black-800;
+    background-color: #F7F7F7;
+    box-shadow: none;
+    &::after {
+        font-family: "bootstrap-icons";        
+        content: "\f2ca";
+        background-image: none;
+        transform: none;            
     }
 }
 
@@ -317,7 +351,10 @@ section {
                 display: none;
             }
         }
-    }    
+    } 
+    .services__block {
+        padding: 35px;
+    }   
 }
 
 @media (min-width:768px) and (max-width:991px) {
