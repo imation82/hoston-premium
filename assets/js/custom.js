@@ -34,4 +34,24 @@ $( document ).ready( function() {
 		});
 
 	});
+
+	$("#testimonial__slider").owlCarousel({
+		items: 4,
+		loop: true,
+		margin: 20,
+		dots: true,
+		navigation: false,
+		responsive: {
+		  0: {
+			items: 1,
+		  },
+		  600: {
+			items: 1,
+		  },
+		  1000: {
+			items: 3,
+		  },
+		},
+	});
+
  });
