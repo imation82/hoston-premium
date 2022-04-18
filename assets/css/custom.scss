@@ -305,6 +305,30 @@ section {
     background-color: $background-02;
 }
 
+// Statistics
+
+.statistics {
+    background: linear-gradient(101.84deg, #7D0C97 -9.04%, #1A0B75 100%);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2 {
+        color: $white;
+    }
+    h4 {
+        color: $white;
+        opacity: 0.8;
+    }
+    p {
+        color: $white;
+        opacity: 0.8;
+        @include fontStyle('Fira Sans', 16px, 400, 35px);
+    }
+    &__counter {        
+        @include fontStyle('Jost', 40px, 400, 30px);
+        color: $white;
+    }
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
