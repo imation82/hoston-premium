@@ -1,6 +1,15 @@
 
 
 $( document ).ready( function() {
+
+    $('.all-features').click(function () {
+        $(this).toggleClass("active");
+        if ($(this).hasClass("active")) {
+            $(this).text("See less features");
+        } else {
+            $(this).text("See all features");
+        }
+    });	
 	
 	jQuery(function ($) {
     	"use strict";

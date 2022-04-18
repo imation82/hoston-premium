@@ -139,13 +139,26 @@ section {
     @extend .btn;
     background-color: transparent;
     border: 1px solid $white;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background-color: rgba(255,255,255,0.10);
+    }
 }
 
-.btn-hoston-outline:hover,
-.btn-hoston-outline:focus,
-.btn-hoston-outline:active {
-    color: $white;
-    background-color: rgba(255,255,255,0.10);
+.btn-hoston-black {
+    @extend .btn;
+    background-color: $black;
+}
+
+.btn-hoston-black {
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background-color: $black-900;        
+    }
 }
 
 .btn-hoston-link {
@@ -154,15 +167,44 @@ section {
     position: relative;
     display: inline-block;
     text-decoration: underline;
+    &::before {
+        content: "\F231";
+        font-family: 'bootstrap-icons';
+        position: absolute;
+        font-size: 10px;
+        right: -20px;
+        font-weight: 400;
+    }
 }
 
-.btn-hoston-link::before {
-    content: "\F231";
-    font-family: 'bootstrap-icons';
-    position: absolute;
-    font-size: 10px;
-    right: -20px;
-    font-weight: 400;
+.btn-hoston-link-2 {
+    @extend .btn-hoston-link;
+    font-size: 14px;
+    color: $black-600;
+    text-decoration: none;
+    &::before {
+        content: none;
+    }
+    &::after {
+        content: "\F282";
+        font-family: "bootstrap-icons";
+        font-size: 10px;
+        font-weight: 700;
+        margin-left: 5px;        
+    }    
+    &:hover,
+    &:focus {
+        color: $black-600;
+    }       
+}
+
+.btn-hoston-link-2.active {
+    color: $primary;
+    &::after {
+        content: "\F286";
+        font-family: "bootstrap-icons";        
+        color: $primary;   
+    }       
 }
 
 // Header
@@ -331,12 +373,59 @@ section {
 
 // Packages
 
-.packages__block {
-    position: relative;
-    background: #ffffff;
-    padding: 60px 50px;
-    box-shadow: 0px 25px 60px -5px rgba(33,40,51,0.12);
-    border-radius: 10px;
+.packages {
+    &__block {
+        position: relative;
+        background: #ffffff;
+        padding: 60px 50px;
+        box-shadow: 0px 25px 60px -5px rgba(33,40,51,0.12);
+        border-radius: 10px;  
+        &--price {
+            @include fontStyle('Fira Sans', 25px, 400, 40px);
+            color: $black-900;
+            padding-top: 10px; 
+            span {
+                color: $primary;
+            }       
+        }
+        &--lists ul {
+            border-bottom: 1px solid #d2d3d3;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            li {
+                @include fontStyle('Fira Sans', 14px, 400, 30px);
+                color: $black-600;     
+                &::before {
+                    content: "\F138";
+                    font-family: "bootstrap-icons";
+                    font-size: 11px;
+                    font-weight: 700;
+                    margin-right: 10px;
+                    color: #38ad43;                    
+                }       
+            }            
+        }
+        .form-select {
+            font-size: 14px;
+            color: $black-600;
+        }      
+    }
+    &__popular {
+        position: absolute;
+        background: $primary;
+        @include fontStyle('Fira Sans', 14px, 400, 22px);
+        color: #ffffff;
+        top: 20px;
+        right: 0;
+        padding: 2px 20px 0px 20px;
+        border-radius: 13px 0px 0px 13px;        
+    }    
+}
+
+// Testimonial
+
+.testimonial {
+    background-color: $background-02;
 }
 
 // Media queries

@@ -124,7 +124,7 @@ section {
   max-width: 570px;
 }
 
-.btn, .btn-hoston-primary, .btn-hoston-outline {
+.btn, .btn-hoston-primary, .btn-hoston-outline, .btn-hoston-black {
   font-family: "Fira Sans";
   font-size: 14px;
   font-weight: 300;
@@ -133,7 +133,7 @@ section {
   border-radius: 2px;
 }
 
-.btn:hover, .btn-hoston-primary:hover, .btn-hoston-outline:hover, .btn:focus, .btn-hoston-primary:focus, .btn-hoston-outline:focus, .btn:active, .btn-hoston-primary:active, .btn-hoston-outline:active {
+.btn:hover, .btn-hoston-primary:hover, .btn-hoston-outline:hover, .btn-hoston-black:hover, .btn:focus, .btn-hoston-primary:focus, .btn-hoston-outline:focus, .btn-hoston-black:focus, .btn:active, .btn-hoston-primary:active, .btn-hoston-outline:active, .btn-hoston-black:active {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -153,14 +153,21 @@ section {
   border: 1px solid #FFFFFF;
 }
 
-.btn-hoston-outline:hover,
-.btn-hoston-outline:focus,
-.btn-hoston-outline:active {
+.btn-hoston-outline:hover, .btn-hoston-outline:focus, .btn-hoston-outline:active {
   color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.btn-hoston-link {
+.btn-hoston-black {
+  background-color: #000000;
+}
+
+.btn-hoston-black:hover, .btn-hoston-black:focus, .btn-hoston-black:active {
+  color: #FFFFFF;
+  background-color: #202124;
+}
+
+.btn-hoston-link, .btn-hoston-link-2 {
   font-family: "Fira Sans";
   font-size: 13px;
   font-weight: 400;
@@ -171,13 +178,45 @@ section {
   text-decoration: underline;
 }
 
-.btn-hoston-link::before {
+.btn-hoston-link::before, .btn-hoston-link-2::before {
   content: "\F231";
   font-family: 'bootstrap-icons';
   position: absolute;
   font-size: 10px;
   right: -20px;
   font-weight: 400;
+}
+
+.btn-hoston-link-2 {
+  font-size: 14px;
+  color: #636466;
+  text-decoration: none;
+}
+
+.btn-hoston-link-2::before {
+  content: none;
+}
+
+.btn-hoston-link-2::after {
+  content: "\F282";
+  font-family: "bootstrap-icons";
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.btn-hoston-link-2:hover, .btn-hoston-link-2:focus {
+  color: #636466;
+}
+
+.btn-hoston-link-2.active {
+  color: #F7421E;
+}
+
+.btn-hoston-link-2.active::after {
+  content: "\F286";
+  font-family: "bootstrap-icons";
+  color: #F7421E;
 }
 
 .header {
@@ -375,6 +414,65 @@ section {
   -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
           box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
   border-radius: 10px;
+}
+
+.packages__block--price {
+  font-family: "Fira Sans";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #202124;
+  padding-top: 10px;
+}
+
+.packages__block--price span {
+  color: #F7421E;
+}
+
+.packages__block--lists ul {
+  border-bottom: 1px solid #d2d3d3;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.packages__block--lists ul li {
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #636466;
+}
+
+.packages__block--lists ul li::before {
+  content: "\F138";
+  font-family: "bootstrap-icons";
+  font-size: 11px;
+  font-weight: 700;
+  margin-right: 10px;
+  color: #38ad43;
+}
+
+.packages__block .form-select {
+  font-size: 14px;
+  color: #636466;
+}
+
+.packages__popular {
+  position: absolute;
+  background: #F7421E;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
+  top: 20px;
+  right: 0;
+  padding: 2px 20px 0px 20px;
+  border-radius: 13px 0px 0px 13px;
+}
+
+.testimonial {
+  background-color: #F0FAE6;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
