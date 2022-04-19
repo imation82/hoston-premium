@@ -620,6 +620,10 @@ section {
   color: #909192;
 }
 
+.footer p {
+  color: #A6A6A7;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
     padding-top: 100px;
