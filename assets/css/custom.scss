@@ -476,7 +476,7 @@ section {
 // FAQ
 
 .faq {
-    padding: 125px 0px 250px 0px;
+    padding: 120px 0px 0px 0px;
     .accordion {
         .card-body {
             padding: 0px 30px 30px 30px;
@@ -518,6 +518,53 @@ section {
     margin-bottom: 20px;
     .accordion-button {
         background: $white !important;
+    }
+}
+
+// Sub footer
+
+.subfooter {
+    position: relative;
+    padding-bottom: 120px;
+    margin-bottom: -255px;
+    &__block {
+        background: linear-gradient(95.53deg, #9c18b1 -38.4%, #121567 106.67%);
+        border-radius: 10px;
+        padding: 40px 0px;
+        h3 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            opacity: 0.8;
+            @include fontStyle('Fira Sans', 16px, 400, 35px);
+        }    
+    }
+}
+
+// Footer
+
+.footer {
+    background-color: $black;
+    padding: 230px 0px;
+    h5 {
+        color: $white;
+    }
+    &__links {
+        li {
+            line-height: 40px;
+        }
+        a {
+            font-size: 14px;
+            color: $black-300;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $black-400;
+            }
+        }
     }
 }
 

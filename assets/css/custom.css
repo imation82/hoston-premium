@@ -517,7 +517,7 @@ section {
 }
 
 .faq {
-  padding: 125px 0px 250px 0px;
+  padding: 120px 0px 0px 0px;
 }
 
 .faq .accordion .card-body {
@@ -568,6 +568,56 @@ section {
 
 .faq .accordion-item.accordion-shadow .accordion-button {
   background: #FFFFFF !important;
+}
+
+.subfooter {
+  position: relative;
+  padding-bottom: 120px;
+  margin-bottom: -255px;
+}
+
+.subfooter__block {
+  background: linear-gradient(95.53deg, #9c18b1 -38.4%, #121567 106.67%);
+  border-radius: 10px;
+  padding: 40px 0px;
+}
+
+.subfooter__block h3 {
+  color: #FFFFFF;
+}
+
+.subfooter__block p {
+  color: #FFFFFF;
+  opacity: 0.8;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 230px 0px;
+}
+
+.footer h5 {
+  color: #FFFFFF;
+}
+
+.footer__links li {
+  line-height: 40px;
+}
+
+.footer__links a {
+  font-size: 14px;
+  color: #A6A6A7;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__links a:hover, .footer__links a:focus, .footer__links a:active {
+  color: #909192;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
