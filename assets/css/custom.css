@@ -72,6 +72,26 @@ p {
   color: #909192;
 }
 
+.owl-carousel .owl-item img {
+  width: auto !important;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #FFAEAE;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #F7421E;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #F7421E;
+}
+
 section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -493,10 +513,6 @@ section {
 
 .testimonials__author--details p {
   font-size: 13px;
-}
-
-#testimonial__slider.owl-carousel .owl-item img {
-  width: auto !important;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

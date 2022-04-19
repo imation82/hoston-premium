@@ -2,6 +2,7 @@
 
 $( document ).ready( function() {
 
+	// View all features
     $('.all-features').click(function () {
         $(this).toggleClass("active");
         if ($(this).hasClass("active")) {
@@ -11,6 +12,7 @@ $( document ).ready( function() {
         }
     });	
 	
+	// Counter up
 	jQuery(function ($) {
     	"use strict";
     
@@ -35,12 +37,17 @@ $( document ).ready( function() {
 
 	});
 
+	// Testimonial slider
 	$("#testimonial__slider").owlCarousel({
 		items: 4,
 		loop: true,
 		margin: 20,
-		dots: true,
-		navigation: false,
+		dots: true,		
+		nav: false,
+		autoplay: true,
+	    slideSpeed : 2000,
+	    smartSpeed: 1500,		
+		autoHeight:true,
 		responsive: {
 		  0: {
 			items: 1,
@@ -53,5 +60,13 @@ $( document ).ready( function() {
 		  },
 		},
 	});
+
+	$("#faq")
+		.on("show.bs.collapse", function (e) {
+			$(e.target).parent(".accordion-item").addClass("accordion-shadow");
+		})
+		.on("hide.bs.collapse", function (e) {
+			$(e.target).parent(".accordion-item").removeClass("accordion-shadow");
+		});	
 
  });
