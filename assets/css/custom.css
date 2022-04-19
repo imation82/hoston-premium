@@ -573,7 +573,7 @@ section {
 .subfooter {
   position: relative;
   padding-bottom: 120px;
-  margin-bottom: -255px;
+  margin-bottom: -265px;
 }
 
 .subfooter__block {
@@ -597,7 +597,7 @@ section {
 
 .footer {
   background-color: #000000;
-  padding: 230px 0px;
+  padding: 230px 0px 25px 0px;
 }
 
 .footer h5 {
@@ -622,6 +622,56 @@ section {
 
 .footer p {
   color: #A6A6A7;
+}
+
+.footer__social .list-inline-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__social i {
+  font-size: 20px;
+}
+
+.footer__social .bi-facebook {
+  color: #3A5A97;
+}
+
+.footer__social .bi-instagram {
+  color: #9519A3;
+}
+
+.footer__social .bi-linkedin {
+  color: #007BB8;
+}
+
+.footer__social .bi-twitter {
+  color: #25A4EF;
+}
+
+.footer__phone a {
+  color: #A6A6A7;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__phone a:hover, .footer__phone a:focus, .footer__phone a:active {
+  color: #909192;
+  text-decoration: none;
+}
+
+.footer__phone i {
+  font-size: 20px;
+  color: #A6A6A7;
+  margin-right: 10px;
+}
+
+.footer hr {
+  color: #636466;
+}
+
+.footer__cards {
+  margin-bottom: 0;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

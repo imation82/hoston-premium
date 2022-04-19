@@ -526,7 +526,7 @@ section {
 .subfooter {
     position: relative;
     padding-bottom: 120px;
-    margin-bottom: -255px;
+    margin-bottom: -265px;
     &__block {
         background: linear-gradient(95.53deg, #9c18b1 -38.4%, #121567 106.67%);
         border-radius: 10px;
@@ -546,7 +546,7 @@ section {
 
 .footer {
     background-color: $black;
-    padding: 230px 0px;
+    padding: 230px 0px 25px 0px;
     h5 {
         color: $white;
     }
@@ -568,6 +568,50 @@ section {
     }
     p {
         color: $black-300;
+    }
+    &__social {
+        .list-inline-item:not(:last-child) {
+            margin-right: 20px;
+        }
+        i {
+            font-size: 20px;
+        }
+        .bi-facebook {
+            color: #3A5A97;
+        }
+        .bi-instagram {
+            color: #9519A3;
+        }
+        .bi-linkedin {
+            color: #007BB8;
+        }
+        .bi-twitter {
+            color: #25A4EF;
+        }
+    }
+    &__phone {
+        a {
+            color: $black-300;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $black-400;
+                text-decoration: none;
+            }
+        }
+        i {
+            font-size: 20px;
+            color: $black-300;
+            margin-right: 10px;
+        }
+    }
+    hr {
+        color: $black-600;
+    }
+    &__cards {
+        margin-bottom: 0;
     }
 }
 
