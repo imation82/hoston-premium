@@ -344,23 +344,24 @@ section {
   text-decoration: none;
 }
 
-.accordion-item {
+.plan .accordion-item {
   border: 1px solid #ECECEC;
+  margin-bottom: 20px;
 }
 
-.accordion-button {
+.plan .accordion-button {
   font-family: "Jost";
   font-size: 20px;
   font-weight: 400;
 }
 
-.accordion-button:focus {
+.plan .accordion-button:focus {
   border-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.accordion-button::after {
+.plan .accordion-button::after {
   font-family: "bootstrap-icons";
   content: "\f4d7";
   font-size: 28px;
@@ -376,14 +377,14 @@ section {
           align-items: center;
 }
 
-.accordion-button:not(.collapsed) {
+.plan .accordion-button:not(.collapsed) {
   color: #36373A;
   background-color: #F7F7F7;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.accordion-button:not(.collapsed)::after {
+.plan .accordion-button:not(.collapsed)::after {
   font-family: "bootstrap-icons";
   content: "\f2ca";
   background-image: none;
@@ -513,6 +514,60 @@ section {
 
 .testimonials__author--details p {
   font-size: 13px;
+}
+
+.faq {
+  padding: 125px 0px 250px 0px;
+}
+
+.faq .accordion .card-body {
+  padding: 0px 30px 30px 30px;
+}
+
+.faq .accordion .accordion-item {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.faq .accordion .accordion-item .accordion-button {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #F8F9F9;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.faq .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #212529;
+}
+
+.faq .accordion .accordion-item .accordion-button::after {
+  content: "\F4D7";
+  font-family: 'bootstrap-icons';
+  font-size: 28px;
+  background-image: none;
+  color: #636466;
+  width: auto;
+  height: auto;
+}
+
+.faq .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  content: "\F2CA";
+  background-image: none;
+}
+
+.faq .accordion-item.accordion-shadow {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+          box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+  margin-bottom: 20px;
+}
+
+.faq .accordion-item.accordion-shadow .accordion-button {
+  background: #FFFFFF !important;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
