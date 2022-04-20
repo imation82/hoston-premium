@@ -1,5 +1,22 @@
 
 
+// Scroll icon visible
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 150) {
+		$('.scroll-top').fadeIn();
+	} else {
+		$('.scroll-top').fadeOut();
+	}
+}); 
+
+// Scroll top
+$('#page-scroll').click(function() {
+	$("html, body").animate({
+		scrollTop: 0
+	}, 1000);
+	return false;
+});
+
 $( document ).ready( function() {
 
 	// View all features
@@ -61,6 +78,7 @@ $( document ).ready( function() {
 		},
 	});
 
+	// F.A.Q accordion
 	$("#faq")
 		.on("show.bs.collapse", function (e) {
 			$(e.target).parent(".accordion-item").addClass("accordion-shadow");

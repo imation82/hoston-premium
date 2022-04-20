@@ -527,10 +527,13 @@ section {
     position: relative;
     padding-bottom: 120px;
     margin-bottom: -265px;
+    margin-left: 15px;
+    margin-right: 15px;
     &__block {
         background: linear-gradient(95.53deg, #9c18b1 -38.4%, #121567 106.67%);
         border-radius: 10px;
-        padding: 40px 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         h3 {
             color: $white;
         }
@@ -610,14 +613,64 @@ section {
     hr {
         color: $black-600;
     }
-    &__cards {
-        margin-bottom: 0;
+    &__language {
+        i {
+            display: flex;
+            align-items: center;
+            color: $black-300;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .form-select {
+            padding: 0px 30px 0px 15px;
+            font-size: 14px;
+            border-radius: 2px;
+            color: $black;
+            &:focus {
+                box-shadow: none;
+                border-color: transparent;
+            }
+        }
     }
+    &__cards {
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Scroll top
+
+.scroll-top {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    a {
+        display: block;
+        font-size: 15px;
+        text-align: center;
+        background-color: $primary;
+        color: $white;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 100%;        
+    }    
 }
 
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
+    h2 {
+        font-size: 25px;
+    }
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .header {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -636,10 +689,6 @@ section {
                 width: 24%;
             }
         }
-    }
-    section {
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
     h2 {
         @include fontStyle(null, 25px, 500, 35px);
@@ -664,10 +713,28 @@ section {
     } 
     .services__block {
         padding: 35px;
+    }
+    .statistics {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .faq {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+    .subfooter {
+        padding-bottom: 80px;
     }   
 }
 
 @media (min-width:768px) and (max-width:991px) {
+    h2 {
+        font-size: 25px;
+    }
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     .header {
         padding-top: 150px;
         padding-bottom: 150px;        
@@ -676,6 +743,32 @@ section {
             p { @include fontStyle(null, 15px, null, 30px); }
         }
     }
+    .statistics {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .faq {
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+    .section__style--1 {
+        h2 {
+            @include fontStyle(null, 25px, 500, 35px);
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+    .section__style--2 {
+        h2 {
+            @include fontStyle(null, 25px, 500, 35px);
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }        
 }
 
 @media (min-width:992px) and (max-width:1199px) {
