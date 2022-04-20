@@ -56,6 +56,10 @@ p {
   margin: 0;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 .form-control::-webkit-input-placeholder {
   color: #909192;
 }
@@ -144,7 +148,7 @@ section {
   max-width: 570px;
 }
 
-.btn, .btn-hoston-primary, .btn-hoston-outline, .btn-hoston-black {
+.btn, .btn-hoston-primary, .btn-hoston-outline, .btn-hoston-black, .best__service--anchor a {
   font-family: "Fira Sans";
   font-size: 14px;
   font-weight: 300;
@@ -153,7 +157,7 @@ section {
   border-radius: 2px;
 }
 
-.btn:hover, .btn-hoston-primary:hover, .btn-hoston-outline:hover, .btn-hoston-black:hover, .btn:focus, .btn-hoston-primary:focus, .btn-hoston-outline:focus, .btn-hoston-black:focus, .btn:active, .btn-hoston-primary:active, .btn-hoston-outline:active, .btn-hoston-black:active {
+.btn:hover, .btn-hoston-primary:hover, .btn-hoston-outline:hover, .btn-hoston-black:hover, .best__service--anchor a:hover, .btn:focus, .btn-hoston-primary:focus, .btn-hoston-outline:focus, .btn-hoston-black:focus, .best__service--anchor a:focus, .btn:active, .btn-hoston-primary:active, .btn-hoston-outline:active, .btn-hoston-black:active, .best__service--anchor a:active {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -731,6 +735,128 @@ section {
   background-color: #E6FAF1;
 }
 
+.domain__search {
+  max-width: 450px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 20px -2px rgba(33, 40, 51, 0.05);
+          box-shadow: 0px 8px 20px -2px rgba(33, 40, 51, 0.05);
+  border-radius: 5px;
+  padding: 50px 25px;
+}
+
+.domain__search ul li {
+  font-family: "Jost";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+  border: 1px solid #D2D3D3;
+  padding: 15px 20px;
+  border-radius: 45px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.domain__search ul li:hover {
+  color: #FFFFFF;
+  background-color: #F7421E;
+  border-color: #F7421E;
+  cursor: pointer;
+}
+
+.best__service {
+  padding-top: 0;
+}
+
+.best__service--block {
+  background-color: #E6FAF1;
+  padding: 100px;
+  border-radius: 20px;
+}
+
+.best__service--block::before {
+  content: url(../svg/service-top.svg);
+  position: absolute;
+  top: -55px;
+  left: -55px;
+}
+
+.best__service--block::after {
+  content: url(../svg/service-bottom.svg);
+  position: absolute;
+  bottom: -100px;
+  right: -85px;
+  z-index: -20;
+}
+
+.best__service--anchor a {
+  padding: 0;
+  color: #000000;
+}
+
+.best__service--anchor a:hover, .best__service--anchor a:focus, .best__service--anchor a:active {
+  text-decoration: none;
+}
+
+.stay {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: linear-gradient(101.84deg, #c01b10 -9.04%, #110966 100%);
+}
+
+.stay__ornaments--bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.stay__ornaments--top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.stay__input input[type=text] {
+  height: 50px;
+  font-size: 14px;
+  border: none;
+  padding-right: 100px;
+}
+
+.stay__input .form-control {
+  border-radius: 2px;
+}
+
+.stay__input input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: transparent;
+}
+
+.stay__input .input-group-prepend {
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  bottom: 4px;
+  z-index: 9;
+}
+
+.stay__content h2 {
+  color: #FFFFFF;
+}
+
+.stay__content p {
+  color: #FFFFFF;
+  opacity: 0.8;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.stay__content input {
+  width: auto;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;
@@ -793,6 +919,12 @@ section {
   .subfooter {
     padding-bottom: 80px;
   }
+  .best__service--block {
+    padding: 20px;
+  }
+  .best__service--block::before, .best__service--block::after {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -837,6 +969,12 @@ section {
     line-height: 35px;
   }
   .section__style--2 h2::before, .section__style--2 h2::after {
+    display: none;
+  }
+  .best__service--block {
+    padding: 40px;
+  }
+  .best__service--block::before, .best__service--block::after {
     display: none;
   }
 }

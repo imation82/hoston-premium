@@ -44,6 +44,10 @@ p {
 
 // Common
 
+ul {
+    margin-bottom: 0;
+}
+
 .form-control::placeholder {
     color: $black-400;
 }
@@ -669,6 +673,115 @@ section {
 
 .domain {
     background-color: $background-03;
+    &__search {
+        max-width: 450px;
+        background-color: $white;
+        box-shadow: 0px 8px 20px -2px rgba(33,40,51,0.05);
+        border-radius: 5px;
+        padding: 50px 25px;
+        ul li {
+            @include fontStyle('Jost', 35px, 500, 35px);
+            border: 1px solid $black-100;
+            padding: 15px 20px;
+            border-radius: 45px;
+            transition: all .2s ease;
+            &:hover {
+                color: $white;
+                background-color: $primary;
+                border-color: $primary;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.best__service {
+    padding-top: 0;
+    &--block {
+        background-color: $background-03;
+        padding: 100px;   
+        border-radius: 20px;
+        &::before {
+            content: url(../svg/service-top.svg);
+            position: absolute;
+            top: -55px;
+            left: -55px;
+        }
+        &::after {
+            content: url(../svg/service-bottom.svg);
+            position: absolute;
+            bottom: -100px;
+            right: -85px;
+            z-index: -20;
+        }                        
+    }
+    &--anchor {
+        a {
+            @extend .btn;
+            padding: 0;
+            color: $black;
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.stay {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: linear-gradient(101.84deg, #c01b10 -9.04%, #110966 100%);
+    &__ornaments {
+        &--bottom {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        &--top {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &__input {
+        input[type=text] {
+            height: 50px;
+            font-size: 14px;
+            border: none;
+            padding-right: 100px;
+        }
+        .form-control {
+            border-radius: 2px;
+        }        
+        input {
+            &:focus {
+                box-shadow: none;
+                border: transparent;
+            }            
+        }
+        .input-group-prepend {
+            position: absolute;
+            right: 4px;
+            top: 3px;
+            bottom: 4px;
+            z-index: 9;              
+        }
+    }
+    &__content {
+        h2 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            opacity: 0.8;
+            @include fontStyle('Fira Sans', 16px, 400, 35px);
+        }  
+        input {
+            width: auto;
+        }  
+    }
 }
 
 // Media queries
@@ -735,6 +848,15 @@ section {
     .subfooter {
         padding-bottom: 80px;
     }   
+    .best__service {
+        &--block {
+            padding: 20px;
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (min-width:768px) and (max-width:991px) {
@@ -778,7 +900,16 @@ section {
                 display: none;
             }
         }
-    }        
+    }   
+    .best__service {
+        &--block {
+            padding: 40px;
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }         
 }
 
 @media (min-width:992px) and (max-width:1199px) {
