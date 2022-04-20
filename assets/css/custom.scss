@@ -248,6 +248,12 @@ section {
     }
 }
 
+// Header - Hoston 2
+#hoston-2 {
+    @extend .header;
+    background-image: url(../images/header-bg-2.jpg);
+}
+
 // Search domain
 
 .search {
