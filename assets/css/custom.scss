@@ -692,6 +692,11 @@ section {
                 cursor: pointer;
             }
         }
+        ul li.active {
+            color: $white;
+            background-color: $primary;
+            border: none;
+        }
     }
 }
 
@@ -854,6 +859,14 @@ section {
             &::before,
             &::after {
                 display: none;
+            }
+        }
+    }
+    .domain {
+        &__search {
+            ul li {
+                @include fontStyle(null, 25px, 500, 25px);
+                padding: 15px;
             }
         }
     }

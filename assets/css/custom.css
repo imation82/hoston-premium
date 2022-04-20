@@ -763,6 +763,12 @@ section {
   cursor: pointer;
 }
 
+.domain__search ul li.active {
+  color: #FFFFFF;
+  background-color: #F7421E;
+  border: none;
+}
+
 .best__service {
   padding-top: 0;
 }
@@ -924,6 +930,12 @@ section {
   }
   .best__service--block::before, .best__service--block::after {
     display: none;
+  }
+  .domain__search ul li {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 15px;
   }
 }
 
