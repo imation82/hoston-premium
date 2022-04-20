@@ -3,14 +3,14 @@
 // Scroll icon visible
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 150) {
-		$('.scroll-top').fadeIn();
+		$('.scroll__top').fadeIn();
 	} else {
-		$('.scroll-top').fadeOut();
+		$('.scroll__top').fadeOut();
 	}
 }); 
 
 // Scroll top
-$('#page-scroll').click(function() {
+$('#page__scroll').click(function() {
 	$("html, body").animate({
 		scrollTop: 0
 	}, 1000);
