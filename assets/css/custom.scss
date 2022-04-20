@@ -248,12 +248,6 @@ section {
     }
 }
 
-// Header - Hoston 2
-#hoston-2 {
-    @extend .header;
-    background-image: url(../images/header-bg-2.jpg);
-}
-
 // Search domain
 
 .search {
@@ -665,6 +659,16 @@ section {
         text-align: center;
         border-radius: 100%;        
     }    
+}
+
+// Header - Hoston 2
+#hoston-2 {
+    @extend .header;
+    background-image: url(../images/header-bg-2.jpg);
+}
+
+.domain {
+    background-color: $background-03;
 }
 
 // Media queries

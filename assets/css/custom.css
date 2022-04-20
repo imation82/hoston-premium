@@ -260,10 +260,6 @@ section {
   line-height: 35px;
 }
 
-#hoston-2 {
-  background-image: url(../images/header-bg-2.jpg);
-}
-
 .search {
   max-width: 820px;
   background-color: #FFFFFF;
@@ -725,6 +721,14 @@ section {
   line-height: 30px;
   text-align: center;
   border-radius: 100%;
+}
+
+#hoston-2 {
+  background-image: url(../images/header-bg-2.jpg);
+}
+
+.domain {
+  background-color: #E6FAF1;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
