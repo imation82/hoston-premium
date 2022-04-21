@@ -863,6 +863,50 @@ section {
   width: auto;
 }
 
+.faq-hoston-2 {
+  background-color: #E6FAF1;
+}
+
+.faq-hoston-2 .accordion .card-body {
+  background-color: #FFFFFF;
+  padding: 0px 30px 30px 30px;
+}
+
+.faq-hoston-2 .accordion .accordion-item {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.faq-hoston-2 .accordion .accordion-item .accordion-button {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.faq-hoston-2 .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #212529;
+}
+
+.faq-hoston-2 .accordion .accordion-item .accordion-button::after {
+  content: "\F4D7";
+  font-family: 'bootstrap-icons';
+  font-size: 28px;
+  background-image: none;
+  color: #636466;
+  width: auto;
+  height: auto;
+}
+
+.faq-hoston-2 .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  content: "\F2CA";
+  background-image: none;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;

@@ -789,6 +789,44 @@ section {
     }
 }
 
+.faq-hoston-2 {
+    background-color: $background-03;
+    .accordion {
+        .card-body {
+            background-color: $white;
+            padding: 0px 30px 30px 30px;
+        }         
+        .accordion-item {
+            border: none;
+            margin-bottom: 20px;      
+            .accordion-button {
+                @include fontStyle('Jost', 20px, 400, null);
+                box-shadow: none;
+                background: $white;
+                border-radius: 5px;
+                padding: 25px;
+                &:not(.collapsed) {
+                    color: #212529;
+                }
+                &::after {
+                    content: "\F4D7";
+                    font-family: 'bootstrap-icons';
+                    font-size: 28px;
+                    background-image: none;
+                    color: $black-600;
+                    width: auto;
+                    height: auto;
+                }
+
+                &:not(.collapsed)::after {
+                    content: "\F2CA";
+                    background-image: none;
+                }                
+            }                   
+        }
+    }   
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
