@@ -78,6 +78,18 @@ $( document ).ready( function() {
 		},
 	});
 
+	$("#testimonial2__slider").owlCarousel({
+		items: 3,
+		loop: true,
+		margin: 20,
+		dots: true,		
+		nav: false,
+		autoplay: true,
+	    slideSpeed : 2000,
+	    smartSpeed: 1500,		
+		autoHeight:true
+	});	
+
 	// F.A.Q accordion
 	$("#faq")
 		.on("show.bs.collapse", function (e) {
