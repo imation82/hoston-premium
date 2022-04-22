@@ -933,16 +933,16 @@ section {
   margin-right: 10px;
 }
 
-.news__content:hover, .news__content:focus, .news__content:active {
-  cursor: pointer;
-}
-
-.news__content:hover h4, .news__content:focus h4, .news__content:active h4 {
-  color: #F7421E;
-}
-
 .news__content h4 {
   margin-bottom: 0;
+}
+
+.news__content h4 a {
+  font-size: 24px;
+}
+
+.news__content h4 a:hover, .news__content h4 a:focus, .news__content h4 a:active {
+  color: #F7421E;
 }
 
 .news__content a {
