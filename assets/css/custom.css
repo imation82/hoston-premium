@@ -859,21 +859,112 @@ section {
   width: auto;
 }
 
-.faq-hoston-2 {
+#hoston-testimonial-2 .owl-carousel .owl-item img {
+  width: 255px;
+}
+
+#hoston-testimonial-2 .owl-prev:hover, #hoston-testimonial-2 .owl-prev:focus,
+#hoston-testimonial-2 .owl-next:hover,
+#hoston-testimonial-2 .owl-next:focus {
+  outline: none;
+  background: transparent;
+}
+
+.testimonial-arrow .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.testimonial-arrow .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.testimonial-arrow i {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.testimonial-arrow i::before, .testimonial-arrow i::after {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #F7421E;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 50px;
+}
+
+.testimonial2__img {
+  width: 250px !important;
+}
+
+.testimonial2__blob {
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  z-index: -20;
+  width: 255px !important;
+}
+
+.testimonial2__content {
+  position: relative;
+}
+
+.testimonial2__content::before {
+  content: "";
+  width: 100%;
+  border-top: 1px solid #ECECEC;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+}
+
+.testimonial2__content::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: -30px;
+  left: 10%;
+  border-bottom: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+}
+
+.testimonial2__content p {
+  font-size: 13px;
+}
+
+.testimonial2__author {
+  position: relative;
+}
+
+.testimonial2__author p {
+  font-size: 13px;
+}
+
+.hoston-faq-2 {
   background-color: #E6FAF1;
 }
 
-.faq-hoston-2 .accordion .card-body {
+.hoston-faq-2 .accordion .card-body {
   background-color: #FFFFFF;
   padding: 0px 30px 30px 30px;
 }
 
-.faq-hoston-2 .accordion .accordion-item {
+.hoston-faq-2 .accordion .accordion-item {
   border: none;
   margin-bottom: 20px;
 }
 
-.faq-hoston-2 .accordion .accordion-item .accordion-button {
+.hoston-faq-2 .accordion .accordion-item .accordion-button {
   font-family: "Jost";
   font-size: 20px;
   font-weight: 400;
@@ -884,11 +975,11 @@ section {
   padding: 25px;
 }
 
-.faq-hoston-2 .accordion .accordion-item .accordion-button:not(.collapsed) {
+.hoston-faq-2 .accordion .accordion-item .accordion-button:not(.collapsed) {
   color: #212529;
 }
 
-.faq-hoston-2 .accordion .accordion-item .accordion-button::after {
+.hoston-faq-2 .accordion .accordion-item .accordion-button::after {
   content: "\F4D7";
   font-family: 'bootstrap-icons';
   font-size: 28px;
@@ -898,7 +989,7 @@ section {
   height: auto;
 }
 
-.faq-hoston-2 .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+.hoston-faq-2 .accordion .accordion-item .accordion-button:not(.collapsed)::after {
   content: "\F2CA";
   background-image: none;
 }

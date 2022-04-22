@@ -78,6 +78,34 @@ $( document ).ready( function() {
 		},
 	});
 
+	// Hoston 2 - Testimonial slider
+	$("#hoston-testimonial-2").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 20,
+		dots: false,		
+		nav: true,
+		navText: [
+			"<i class='bi bi-arrow-left'></i>",
+			"<i class='bi bi-arrow-right'></i>"
+			],
+		autoplay: false,
+	    slideSpeed : 2000,
+	    smartSpeed: 1500,		
+		autoHeight:true,
+		responsive: {
+		  0: {
+			items: 1,
+		  },
+		  600: {
+			items: 1,
+		  },
+		  1000: {
+			items: 1,
+		  },
+		},
+	});	
+
 	// Footer slider
 	$("#footer__slider").owlCarousel({
 		items: 6,
