@@ -933,11 +933,11 @@ section {
   margin-right: 10px;
 }
 
-.news__content:hover {
+.news__content:hover, .news__content:focus, .news__content:active {
   cursor: pointer;
 }
 
-.news__content:hover h4 {
+.news__content:hover h4, .news__content:focus h4, .news__content:active h4 {
   color: #F7421E;
 }
 
