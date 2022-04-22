@@ -78,6 +78,36 @@ $( document ).ready( function() {
 		},
 	});
 
+	// Footer slider
+	$("#footer__slider").owlCarousel({
+		items: 6,
+		loop: true,
+		margin: 20,
+		dots: false,		
+		nav: false,
+		autoplay: true,
+	    slideSpeed : 2000,
+	    smartSpeed: 1500,		
+		autoHeight:true,
+		responsive: {
+		  0: {
+			items: 1,
+		  },
+		  540: {
+			  items: 2,
+		  },
+		  767: {
+			items: 4,
+		  },
+		  992: {
+			items: 5,
+		  },
+		  1200: {
+			items: 6,
+		  },		  
+		},
+	});	
+
 	// F.A.Q accordion
 	$("#faq")
 		.on("show.bs.collapse", function (e) {
