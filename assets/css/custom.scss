@@ -683,8 +683,7 @@ section {
         width: 100%;
         z-index: 999999;
         &--info {
-            padding: 10px;            
-            border-bottom: 1px solid rgba(255,255,255,0.07);       
+            padding: 10px;                
             ul {
                 margin-bottom: 0;
                 li {
@@ -1041,8 +1040,8 @@ section {
         padding-bottom: 40px;
     }
     .header {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 130px;
+        padding-bottom: 130px;
         &__content {
             h1 { @include fontStyle(null, 25px, null, 40px); }
             p { @include fontStyle(null, 15px, null, 25px); }
@@ -1207,7 +1206,15 @@ section {
 }
 
 @media (min-width:992px) {
+    .header {
+        &__top {
+            &--info {
+                border-bottom: 1px solid rgba(255,255,255,0.07) !important;   
+            }
+        }
+    }
     .hoston__nav--1 {
+        background: transparent !important;
         .navbar-nav {
             li {
                 a {
@@ -1282,11 +1289,12 @@ section {
         }   
     }
     .hoston__nav--1.hoston__bg--1 {
-        background-color: #6B0B91;
+        background-color: #6B0B91 !important;
         animation: smoothScroll 1s forwards;
     }
     .hoston__nav--2 {
         @extend .hoston__nav--1;
+        background: transparent !important;
         .nav-item {
             .dropdown-menu {
                 .dropdown-item {
@@ -1299,8 +1307,24 @@ section {
         }      
     }
     .hoston__nav--2.hoston__bg--2 {
-        background-color: #9F1821;
+        background-color: #9F1821 !important;
         animation: smoothScroll 1s forwards;
     }      
 
+}
+
+@media (min-width:320px) {
+    .header {
+        &__top {
+            &--info {
+                border-bottom: none;   
+            }
+        }
+    }
+    .hoston__nav--1 {
+        background: #590B8B;
+    }
+    .hoston__nav--2 {
+        background: #89152A;
+    }
 }
