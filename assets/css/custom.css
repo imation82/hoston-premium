@@ -757,7 +757,7 @@ section {
 }
 
 .header__top--info {
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .header__top--info ul {
@@ -1308,6 +1308,7 @@ section {
     border-bottom: none;
   }
   .hoston__nav--1 .nav-item .dropdown-menu .dropdown-item, .hoston__nav--2 .nav-item .dropdown-menu .dropdown-item {
+    color: #636466;
     -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
   }
@@ -1325,14 +1326,6 @@ section {
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
-  .hoston__nav--1 .dropdown-toggle::after, .hoston__nav--2 .dropdown-toggle::after {
-    background-image: none;
-    content: "\F282";
-    font-family: 'bootstrap-icons';
-    vertical-align: middle;
-    border-top: 0;
-    border-right: 0;
-  }
   .hoston__nav--1 .nav-link, .hoston__nav--2 .nav-link {
     color: #FFFFFF;
     font-size: 13px;
@@ -1340,11 +1333,9 @@ section {
     padding-left: 8px;
     margin-right: 45px;
   }
-  .hoston__nav--1 .nav-link:hover, .hoston__nav--2 .nav-link:hover, .hoston__nav--1 .nav-link:focus, .hoston__nav--2 .nav-link:focus, .hoston__nav--1 .nav-link:active, .hoston__nav--2 .nav-link:active {
-    color: #FFFFFF;
-  }
   .hoston__nav--1 .dropdown-menu, .hoston__nav--2 .dropdown-menu {
     font-size: 13px;
+    background: #FFFFFF;
   }
   .hoston__nav--1 .dropdown-menu.fade-up, .hoston__nav--2 .dropdown-menu.fade-up {
     top: 180%;
@@ -1358,6 +1349,7 @@ section {
     background: transparent !important;
   }
   .hoston__nav--2 .nav-item .dropdown-menu .dropdown-item:hover, .hoston__nav--2 .nav-item .dropdown-menu .dropdown-item:focus {
+    color: #000000;
     border-left: 4px solid #F7421E !important;
   }
   .hoston__nav--2.hoston__bg--2 {
@@ -1370,6 +1362,49 @@ section {
 @media (min-width: 320px) {
   .header__top--info {
     border-bottom: none;
+  }
+  .navbar-toggler-icon::after {
+    content: "\F456";
+    font-family: 'bootstrap-icons';
+    color: #FFFFFF;
+    font-size: 28px;
+    float: right;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .dropdown-toggle::after {
+    background-image: none;
+    content: "\F282";
+    font-family: 'bootstrap-icons';
+    vertical-align: middle;
+    border-top: 0;
+    border-right: 0;
+    float: right;
+    font-size: 8px;
+    margin-right: 5px;
+  }
+  .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-toggle:active {
+    color: #FFFFFF;
+  }
+  .nav-link {
+    color: #FFFFFF;
+    font-size: 13px;
+  }
+  .nav-link i {
+    margin-right: 10px;
+  }
+  .dropdown-menu {
+    background: transparent;
+    border: none;
+    font-size: 13px;
+  }
+  .dropdown-menu .dropdown-item {
+    color: #FFFFFF;
+  }
+  .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+    background: transparent;
   }
   .hoston__nav--1, .hoston__nav--2 {
     background: #590B8B;
