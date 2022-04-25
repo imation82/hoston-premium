@@ -261,6 +261,16 @@ section {
   color: #F7421E;
 }
 
+.anchor__blue {
+  color: #0D6EFD;
+  text-decoration: underline;
+}
+
+.anchor__blue:hover, .anchor__blue:focus {
+  color: #0D6EFD;
+  text-decoration: none;
+}
+
 .header, #hoston-2 {
   background-image: url(../images/header-bg.jpg);
   background-size: cover;
@@ -1155,6 +1165,88 @@ section {
 
 .error__v2--content h4 {
   color: #636466;
+}
+
+.account {
+  padding: 50px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(100% 231.68% at 0% 100%, #27066c 9.29%, #650e8e 93.33%);
+}
+
+.account__create {
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.account__create--btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #D2D3D3;
+  background: transparent;
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 5px;
+  color: #636466;
+}
+
+.account__create--btn button img {
+  margin-right: 10px;
+}
+
+.account__create--btn button:hover, .account__create--btn button:focus {
+  background: #F8F9F9;
+}
+
+.account__create--divider {
+  position: relative;
+  text-align: center;
+}
+
+.account__create--divider span {
+  color: #636466;
+}
+
+.account__create--divider span::before {
+  content: "";
+  position: absolute;
+  background: #D2D3D3;
+  height: 1px;
+  left: 0;
+  top: 50%;
+  width: 44%;
+}
+
+.account__create--divider span::after {
+  content: "";
+  position: absolute;
+  background: #D2D3D3;
+  height: 1px;
+  right: 0;
+  top: 50%;
+  width: 44%;
+}
+
+.account__create--input .input-group i {
+  color: #909192;
+}
+
+.account__create--input input {
+  height: 55px;
+  font-size: 14px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
