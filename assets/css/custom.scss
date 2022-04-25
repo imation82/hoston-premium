@@ -303,7 +303,23 @@ section {
 // Header - Hoston 03
 #hoston-3 {
     @extend .header;
-    background-image: url(../images/header-bg-3.jpg);
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-image: url(../svg/header-bg-3.svg);
+    .header__content {
+        .search__2 {
+            input {
+                border: none;
+            }
+        }
+        .search__domain {
+            ul {
+                li {
+                    color: $white;
+                }
+            }
+        }
+    }
 }
 
 // Search domain
