@@ -360,7 +360,7 @@ section {
   font-weight: 400;
   color: #909192 !important;
   background-color: #F8F9F9;
-  border: 1px solid #D2D3D3;
+  border: 1px solid #D2D2D3;
   padding: 10px 10px 10px 40px;
   border-radius: 2px;
   height: 42px;
@@ -369,7 +369,7 @@ section {
 .search__input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 1px solid #D2D3D3;
+  border: 1px solid #D2D2D3;
 }
 
 .search__domain--pricing .list-inline-item {
@@ -815,7 +815,7 @@ section {
   font-size: 35px;
   font-weight: 500;
   line-height: 35px;
-  border: 1px solid #D2D3D3;
+  border: 1px solid #D2D2D3;
   padding: 15px 20px;
   border-radius: 45px;
   -webkit-transition: all .2s ease;
@@ -1191,7 +1191,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #D2D3D3;
+  border: 1px solid #D2D2D3;
   background: transparent;
   padding: 15px 20px;
   width: 100%;
@@ -1219,7 +1219,7 @@ section {
 .account__create--divider span::before {
   content: "";
   position: absolute;
-  background: #D2D3D3;
+  background: #D2D2D3;
   height: 1px;
   left: 0;
   top: 50%;
@@ -1229,7 +1229,7 @@ section {
 .account__create--divider span::after {
   content: "";
   position: absolute;
-  background: #D2D3D3;
+  background: #D2D2D3;
   height: 1px;
   right: 0;
   top: 50%;
@@ -1265,6 +1265,36 @@ section {
 .brand__list--description a {
   padding: 0;
   font-size: 14px;
+}
+
+.services2__block {
+  position: relative;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+          box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+  padding: 55px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services2__block--btn {
+  margin-top: 40px;
+}
+
+.services2__block--btn a:hover, .services2__block--btn a:focus, .services2__block--btn a:active {
+  color: #000000;
+}
+
+.services2__block:hover {
+  margin-top: -10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.services2__block:hover h4 {
+  color: #F7421E;
 }
 
 .scroll__top {

@@ -1177,6 +1177,36 @@ section {
     }
 }
 
+.services2 {
+    &__block {
+        position: relative;
+        background-color: $white;
+        box-shadow: 0px 25px 60px -5px rgba(33,40,51,0.12);
+        padding: 55px;
+        border-radius: 5px;
+        transition: all 0.3s ease;        
+        &--btn {
+            margin-top: 40px;
+                a {
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $black;                    
+                }
+            }
+        }
+        &:hover {
+            margin-top: -10px;
+            transition: all 0.3s ease;   
+            cursor: pointer;         
+        }
+        &:hover h4 {
+            color: $primary;
+        }
+
+    }    
+}
+
 // Scroll top
 
 .scroll__top {
