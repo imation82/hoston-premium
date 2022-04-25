@@ -1207,6 +1207,32 @@ section {
     }    
 }
 
+.support {
+    position: relative;
+    background-image: url(../images/support-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    span {
+        font-size: 20px;
+        color: $white;
+        opacity: 0.8;
+    }
+    h2 {
+        color: $white;
+    }
+    p {
+        color: $white;
+        opacity: 0.8;
+    }
+    h4 {
+        color: $white;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
 // Scroll top
 
 .scroll__top {
@@ -1495,9 +1521,29 @@ section {
             }
         }      
     }
+    .hoston__nav--3 {
+        @extend .hoston__nav--1;
+        background: transparent !important;
+        .nav-item {
+            .dropdown-menu {
+                .dropdown-item {
+                    &:hover,
+                    &:focus {
+                        color: $black;
+                        border-left: 4px solid #400A7A !important;
+                    }
+                }
+            }
+        }
+    }
     .hoston__nav--2.hoston__bg--2 {
         background-color: #9F1821 !important;
         animation: smoothScroll 1s forwards;
+    }
+    .hoston__nav--3.hoston__bg--3 {
+        background-color: #400A7A !important;
+        animation: smoothScroll 1s forwards;
+
     } 
     .account {
         padding: 50px 60px;        
@@ -1574,6 +1620,9 @@ section {
     }
     .hoston__nav--2 {
         background: #89152A;
+    }
+    .hoston__nav--3 {
+        background: #400A7A;
     }
     .account {
         padding: 50px 0px;

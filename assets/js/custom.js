@@ -7,11 +7,13 @@ $(window).scroll(function() {
 		$('.header__top--info').addClass('d-none');
 		$('.hoston__nav--1').addClass('hoston__bg--1');
 		$('.hoston__nav--2').addClass('hoston__bg--2');
+		$('.hoston__nav--3').addClass('hoston__bg--3');
 	} else {
 		$('.scroll__top').fadeOut();
 		$('.header__top--info').removeClass('d-none');
 		$('.hoston__nav--1').removeClass('hoston__bg--1');
 		$('.hoston__nav--2').removeClass('hoston__bg--2');
+		$('.hoston__nav--3').removeClass('hoston__bg--3');
 	}
 }); 
 
