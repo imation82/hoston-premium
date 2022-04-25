@@ -263,7 +263,7 @@ section {
 
 .anchor__blue {
   color: #0D6EFD;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .anchor__blue:hover, .anchor__blue:focus {
@@ -1168,7 +1168,6 @@ section {
 }
 
 .account {
-  padding: 50px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1244,9 +1243,13 @@ section {
   color: #909192;
 }
 
-.account__create--input input {
+.account__create--input .form-control {
   height: 55px;
   font-size: 14px;
+}
+
+.account__create--input .form-check-label {
+  color: #636466;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1486,6 +1489,9 @@ section {
     -webkit-animation: smoothScroll 1s forwards;
             animation: smoothScroll 1s forwards;
   }
+  .account {
+    padding: 50px 60px;
+  }
 }
 
 @media (min-width: 320px) {
@@ -1540,6 +1546,9 @@ section {
   }
   .hoston__nav--2 {
     background: #89152A;
+  }
+  .account {
+    padding: 50px 0px;
   }
 }
 /*# sourceMappingURL=custom.css.map */

@@ -238,7 +238,7 @@ section {
 
 .anchor__blue {
     color: #0D6EFD;
-    text-decoration: underline;
+    text-decoration: none;
     &:hover,
     &:focus {
         color: #0D6EFD;
@@ -1079,7 +1079,6 @@ section {
 // Create account
 
 .account {
-    padding: 50px 60px;
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -1139,9 +1138,12 @@ section {
                     color: $black-400;
                 }                
             }
-            input {
+            .form-control {
                 height: 55px;
                 font-size: 14px;
+            }
+            .form-check-label {
+                color: $black-600;
             }
         }
     }
@@ -1416,7 +1418,10 @@ section {
     .hoston__nav--2.hoston__bg--2 {
         background-color: #9F1821 !important;
         animation: smoothScroll 1s forwards;
-    }      
+    } 
+    .account {
+        padding: 50px 60px;        
+    }
 
 }
 
@@ -1489,5 +1494,8 @@ section {
     }
     .hoston__nav--2 {
         background: #89152A;
+    }
+    .account {
+        padding: 50px 0px;
     }
 }
