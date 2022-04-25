@@ -246,7 +246,7 @@ section {
     }
 }
 
-// Header
+// Hoston - Header 01
 
 .header {
     background-image: url(../images/header-bg.jpg);
@@ -265,6 +265,45 @@ section {
             @include fontStyle('Fira Sans', 16px, 400, 35px);
         }                          
     }
+}
+
+// Header - Hoston 02
+#hoston-2 {
+    @extend .header;
+    background-image: url(../images/header-bg-2.jpg);
+}
+
+.header {
+    &__top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999999;
+        &--info {
+            padding: 10px 0px;                
+            ul {
+                margin-bottom: 0;
+                li {
+                    i {
+                        font-size: 16px;
+                        margin-right: 10px;
+                    }
+                    a {
+                        color: $white;
+                        font-weight: 400;
+                        font-size: 13px;
+                        text-decoration: none;
+                    }
+                }
+            }                 
+        }
+    }
+}
+
+// Header - Hoston 03
+#hoston-3 {
+    @extend .header;
+    background-image: url(../images/header-bg-3.jpg);
 }
 
 // Search domain
@@ -564,7 +603,7 @@ section {
     }
 }
 
-// Footer
+// Hoston - Footer 01
 
 .footer {
     background-color: $black;
@@ -658,59 +697,27 @@ section {
     }
 }
 
-// Scroll top
+// Hoston - Footer 02
 
-.scroll__top {
-    position: fixed;
-    display: none;
-    z-index: 999;
-    bottom: 25px;
-    right: 25px;
-    a {
-        display: block;
-        font-size: 15px;
-        text-align: center;
-        background-color: $primary;
-        color: $white;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        border-radius: 100%;        
-    }    
+#hoston-footer-2 {
+    background-color: #25054D;
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
 
-// Header - Hoston 2
-#hoston-2 {
-    @extend .header;
-    background-image: url(../images/header-bg-2.jpg);
-}
-
-.header {
-    &__top {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999999;
-        &--info {
-            padding: 10px 0px;                
-            ul {
-                margin-bottom: 0;
-                li {
-                    i {
-                        font-size: 16px;
-                        margin-right: 10px;
-                    }
-                    a {
-                        color: $white;
-                        font-weight: 400;
-                        font-size: 13px;
-                        text-decoration: none;
-                    }
-                }
-            }                 
+.footer {
+    .footer__ornaments {
+        &--bottom {
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
-    }
+        &--top {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+    }        
 }
 
 .domain {
@@ -1016,27 +1023,10 @@ section {
     }
 }
 
-// Hoston 2 - Footer
+// Brand
 
-#hoston-footer-2 {
-    background-color: #25054D;
-    padding-top: 30px;
-    padding-bottom: 80px;
-}
-
-.footer {
-    .footer__ornaments {
-        &--bottom {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-        &--top {
-            position: absolute;
-            top: 100px;
-            left: 50px;
-        }
-    }        
+.brand {
+    background-color: $background-02;
 }
 
 // Error 
@@ -1147,6 +1137,28 @@ section {
             }
         }
     }
+}
+
+// Scroll top
+
+.scroll__top {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 25px;
+    right: 25px;
+    a {
+        display: block;
+        font-size: 15px;
+        text-align: center;
+        background-color: $primary;
+        color: $white;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 100%;        
+    }    
 }
 
 // Media queries
