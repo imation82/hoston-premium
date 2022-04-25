@@ -1155,6 +1155,28 @@ section {
     }
 }
 
+// Brand 
+
+.brand {    
+    &__list {
+        max-width: 475px;
+        ::marker {
+            font-size: 25px;
+            color: $primary;
+        }
+        &--description {
+            h5 {
+                margin-bottom: 0;
+            }
+            a {
+                padding: 0;
+                font-size: 14px;
+                // color: $black;
+            }
+        }
+    }
+}
+
 // Scroll top
 
 .scroll__top {

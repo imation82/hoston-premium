@@ -1249,6 +1249,24 @@ section {
   color: #636466;
 }
 
+.brand__list {
+  max-width: 475px;
+}
+
+.brand__list ::marker {
+  font-size: 25px;
+  color: #F7421E;
+}
+
+.brand__list--description h5 {
+  margin-bottom: 0;
+}
+
+.brand__list--description a {
+  padding: 0;
+  font-size: 14px;
+}
+
 .scroll__top {
   position: fixed;
   display: none;
