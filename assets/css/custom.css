@@ -1120,6 +1120,43 @@ section {
   left: 50px;
 }
 
+#error {
+  padding: 0;
+}
+
+.error__v1, .error__v2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.error__v1--content h2 {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+.error__v1--content h4 {
+  color: #636466;
+}
+
+.error__v2 h2 {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+.error__v2--content h4 {
+  color: #636466;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;

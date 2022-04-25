@@ -1029,6 +1029,43 @@ section {
     }        
 }
 
+// Error 
+
+#error {
+    padding: 0;
+}
+
+// Error - v1
+
+.error__v1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    &--content {
+        h2 {
+            @include fontStyle(null, 70px, 500, 52px);
+        }
+        h4 {
+            color: $black-600;
+        }
+    }
+}
+
+// Error - v2
+
+.error__v2 {
+    @extend .error__v1;
+    h2 {
+        @include fontStyle(null, 70px, 500, 52px);
+    }      
+    &--content {  
+        h4 {
+            color: $black-600;
+        }    
+    }
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
