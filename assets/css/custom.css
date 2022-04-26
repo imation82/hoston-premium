@@ -713,11 +713,11 @@ section {
 }
 
 .footer__social .bi-facebook {
-  color: #3A5A97;
+  color: #436DFF;
 }
 
 .footer__social .bi-instagram {
-  color: #9519A3;
+  color: #E636BB;
 }
 
 .footer__social .bi-linkedin {
@@ -1326,6 +1326,42 @@ section {
 .support2 a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.testimonial3 {
+  background-color: #F0FAE6;
+}
+
+#vmap {
+  margin: 0 auto;
+}
+
+.news3 {
+  background-color: #F8F9F9;
+}
+
+#hoston-footer-3 {
+  position: relative;
+  padding-top: 30px;
+  background-image: url(../svg/footer-bg-3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hoston-footer-3 h2 {
+  color: #FFFFFF;
+}
+
+#hoston-footer-3 .footer3__ornaments--top {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#hoston-footer-3 .footer3__ornaments--bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .scroll__top {

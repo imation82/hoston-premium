@@ -654,10 +654,10 @@ section {
             font-size: 20px;
         }
         .bi-facebook {
-            color: #3A5A97;
+            color: #436DFF;
         }
         .bi-instagram {
-            color: #9519A3;
+            color: #E636BB;
         }
         .bi-linkedin {
             color: #007BB8;
@@ -1231,6 +1231,53 @@ section {
         color: $white;
         text-decoration: none;
     }
+}
+
+
+
+// Hoston - Testimonial 3
+
+.testimonial3 {
+    background-color: $background-02;
+}
+
+// map 
+
+#vmap {
+    margin: 0 auto;
+}
+
+// News 3
+
+.news3 {
+    background-color: $background-01;
+}
+
+// Hoston - Footer 02
+
+#hoston-footer-3 {
+    position: relative;
+    padding-top: 30px;
+    background-image: url(../svg/footer-bg-3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+        color: $white;
+    }    
+
+    .footer3__ornaments--top {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .footer3__ornaments--bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
 }
 
 // Scroll top

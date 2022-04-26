@@ -153,4 +153,21 @@ $( document ).ready( function() {
 			$(e.target).parent(".accordion-item").removeClass("accordion-shadow");
 		});	
 
+	// vmap
+
+	jQuery('#vmap').vectorMap({
+		map: 'world_en',
+		backgroundColor: '#ffffff',
+		color: '#ffffff',
+		hoverOpacity: 0.7,
+		selectedColor: '#666666',
+		enableZoom: true,
+		showTooltip: true,
+		values: sample_data,
+		scaleColors: ['#ECECEC'],
+		normalizeFunction: 'polynomial',
+	});
+		
+	jQuery("#vmap").vectorMap("set", "colors", { ca: "#C43526", au: "#0C4CA3", ru: "#0036A0" });
+
  });
