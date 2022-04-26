@@ -1297,33 +1297,33 @@ section {
   color: #F7421E;
 }
 
-.support {
+.support2 {
   position: relative;
   background-image: url(../images/support-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.support span {
+.support2 span {
   font-size: 20px;
   color: #FFFFFF;
   opacity: 0.8;
 }
 
-.support h2 {
+.support2 h2 {
   color: #FFFFFF;
 }
 
-.support p {
+.support2 p {
   color: #FFFFFF;
   opacity: 0.8;
 }
 
-.support h4 {
+.support2 h4 {
   color: #FFFFFF;
 }
 
-.support a {
+.support2 a {
   color: #FFFFFF;
   text-decoration: none;
 }
