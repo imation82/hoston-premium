@@ -895,7 +895,6 @@ section {
 }
 
 .testimonial2 {
-    &
     &__img {
         width: 250px !important;
         &--block {
@@ -1171,13 +1170,14 @@ section {
             a {
                 padding: 0;
                 font-size: 14px;
-                // color: $black;
             }
         }
     }
 }
 
-.services2 {
+// Hoston 03 - Services
+
+.hoston-3-services {
     &__block {
         position: relative;
         background-color: $white;
@@ -1207,7 +1207,9 @@ section {
     }    
 }
 
-.support2 {
+// Hoston 03 - Support
+
+.hoston-3-support {
     position: relative;
     background-image: url(../images/support-bg.jpg);
     background-size: cover;
@@ -1233,29 +1235,29 @@ section {
     }
 }
 
+// Hoston 03 - Testimonial
 
-
-// Hoston - Testimonial 3
-
-.testimonial3 {
+.hoston-3-testimonial {
     background-color: $background-02;
 }
 
-// map 
+// map
 
 #vmap {
     margin: 0 auto;
+    width: 100%;
+    height: 600px;
 }
 
-// News 3
+// Hoston 03 - News
 
-.news3 {
+.hoston-3-news {
     background-color: $background-01;
 }
 
-// Hoston - Footer 02
+// Hoston 03 - Footer
 
-#hoston-footer-3 {
+#hoston-3-footer {
     position: relative;
     padding-top: 30px;
     background-image: url(../svg/footer-bg-3.svg);
@@ -1404,6 +1406,10 @@ section {
             }
         }
     }
+    #vmap {
+        width: 100% !important;
+        height: 300px !important;
+    }
 
 }
 
@@ -1467,10 +1473,10 @@ section {
             top: 100%;
             left: 100%;
         }
-    }       
+    }         
 }
 
-@media (min-width:992px) and (max-width:1199px) {
+@media (min-width:992px) and (max-width:1199px) {   
     .header {
         &__content {
             h1 { @include fontStyle(null, 40px, null, 50px); }

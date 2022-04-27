@@ -154,8 +154,7 @@ $( document ).ready( function() {
 		});	
 
 	// vmap
-
-	jQuery('#vmap').vectorMap({
+	$("#vmap").length !== 0 && jQuery('#vmap').vectorMap({
 		map: 'world_en',
 		backgroundColor: '#ffffff',
 		color: '#ffffff',
@@ -168,6 +167,6 @@ $( document ).ready( function() {
 		normalizeFunction: 'polynomial',
 	});
 		
-	jQuery("#vmap").vectorMap("set", "colors", { ca: "#C43526", au: "#0C4CA3", ru: "#0036A0" });
+	$("#vmap").length !== 0 && jQuery("#vmap").vectorMap("set", "colors", { ca: "#C43526", au: "#0C4CA3", ru: "#0036A0" });
 
  });

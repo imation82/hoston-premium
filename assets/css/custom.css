@@ -967,11 +967,11 @@ section {
   border-radius: 50px;
 }
 
-.testimonial2 .testimonial2__img {
+.testimonial2__img {
   width: 250px !important;
 }
 
-.testimonial2 .testimonial2__img--block {
+.testimonial2__img--block {
   width: 250px;
   margin: 0 auto;
 }
@@ -1267,7 +1267,7 @@ section {
   font-size: 14px;
 }
 
-.services2__block {
+.hoston-3-services__block {
   position: relative;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
@@ -1278,69 +1278,71 @@ section {
   transition: all 0.3s ease;
 }
 
-.services2__block--btn {
+.hoston-3-services__block--btn {
   margin-top: 40px;
 }
 
-.services2__block--btn a:hover, .services2__block--btn a:focus, .services2__block--btn a:active {
+.hoston-3-services__block--btn a:hover, .hoston-3-services__block--btn a:focus, .hoston-3-services__block--btn a:active {
   color: #000000;
 }
 
-.services2__block:hover {
+.hoston-3-services__block:hover {
   margin-top: -10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.services2__block:hover h4 {
+.hoston-3-services__block:hover h4 {
   color: #F7421E;
 }
 
-.support2 {
+.hoston-3-support {
   position: relative;
   background-image: url(../images/support-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.support2 span {
+.hoston-3-support span {
   font-size: 20px;
   color: #FFFFFF;
   opacity: 0.8;
 }
 
-.support2 h2 {
+.hoston-3-support h2 {
   color: #FFFFFF;
 }
 
-.support2 p {
+.hoston-3-support p {
   color: #FFFFFF;
   opacity: 0.8;
 }
 
-.support2 h4 {
+.hoston-3-support h4 {
   color: #FFFFFF;
 }
 
-.support2 a {
+.hoston-3-support a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.testimonial3 {
+.hoston-3-testimonial {
   background-color: #F0FAE6;
 }
 
 #vmap {
   margin: 0 auto;
+  width: 100%;
+  height: 600px;
 }
 
-.news3 {
+.hoston-3-news {
   background-color: #F8F9F9;
 }
 
-#hoston-footer-3 {
+#hoston-3-footer {
   position: relative;
   padding-top: 30px;
   background-image: url(../svg/footer-bg-3.svg);
@@ -1348,17 +1350,17 @@ section {
   background-repeat: no-repeat;
 }
 
-#hoston-footer-3 h2 {
+#hoston-3-footer h2 {
   color: #FFFFFF;
 }
 
-#hoston-footer-3 .footer3__ornaments--top {
+#hoston-3-footer .footer3__ornaments--top {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-#hoston-footer-3 .footer3__ornaments--bottom {
+#hoston-3-footer .footer3__ornaments--bottom {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1477,6 +1479,10 @@ section {
     width: 25px;
     height: 25px;
     line-height: 25px;
+  }
+  #vmap {
+    width: 100% !important;
+    height: 300px !important;
   }
 }
 
