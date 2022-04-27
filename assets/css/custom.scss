@@ -44,6 +44,23 @@ p {
 
 // Common
 
+.breadcrumb {
+    .breadcrumb-item {
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+.breadcrumb-item.active {
+    color: $black-400;
+}
+.breadcrumb-item +.breadcrumb-item {
+    &::before {
+        color: $black-400;
+    }
+}
+
 .form-control::placeholder {
     color: $black-400;
 }
@@ -291,7 +308,7 @@ section {
                     a {
                         color: $white;
                         font-weight: 400;
-                        font-size: 13px;
+                        font-size: 11px;
                         text-decoration: none;
                     }
                 }
@@ -1292,6 +1309,44 @@ section {
 
 }
 
+// Inner pages - About
+
+.about__header {
+    @extend .header;
+    background: radial-gradient(100% 263.01% at 0% 0%, #650e8e 0%, #27066c 100%);
+    position: relative;
+    figure {
+        .header__bottom {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.about__mission {
+    background-color: $background-03;
+}
+
+.about__location {
+    background-color: $white;
+}
+
+#vmap {
+    background-color: transparent !important;
+}
+
+.about__stay {
+    @extend .stay;
+    background: radial-gradient(100% 263.01% at 0% 0%, #27066c 0%, #650e8e 100%);
+}
+
+.about__team {
+    background-color: $background-03;
+}
+
+
+
 // Scroll top
 
 .scroll__top {
@@ -1499,6 +1554,13 @@ section {
         &__top {
             &--info {
                 border-bottom: 1px solid rgba(255,255,255,0.07) !important;   
+                ul {
+                    li {
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
             }
         }
     }

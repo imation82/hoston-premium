@@ -56,6 +56,19 @@ p {
   margin: 0;
 }
 
+.breadcrumb .breadcrumb-item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #909192;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #909192;
+}
+
 .form-control::-webkit-input-placeholder {
   color: #909192;
 }
@@ -271,7 +284,7 @@ section {
   text-decoration: none;
 }
 
-.header, #hoston-2, #hoston-3 {
+.header, #hoston-2, #hoston-3, .about__header {
   background-image: url(../images/header-bg.jpg);
   background-size: cover;
   height: 100%;
@@ -319,7 +332,7 @@ section {
 .header__top--info ul li a {
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 11px;
   text-decoration: none;
 }
 
@@ -869,7 +882,7 @@ section {
   text-decoration: none;
 }
 
-.stay {
+.stay, .about__stay {
   padding-top: 80px;
   padding-bottom: 80px;
   background: linear-gradient(101.84deg, #c01b10 -9.04%, #110966 100%);
@@ -1374,6 +1387,37 @@ section {
   bottom: 0;
 }
 
+.about__header {
+  background: radial-gradient(100% 263.01% at 0% 0%, #650e8e 0%, #27066c 100%);
+  position: relative;
+}
+
+.about__header figure .header__bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.about__mission {
+  background-color: #E6FAF1;
+}
+
+.about__location {
+  background-color: #FFFFFF;
+}
+
+#vmap {
+  background-color: transparent !important;
+}
+
+.about__stay {
+  background: radial-gradient(100% 263.01% at 0% 0%, #27066c 0%, #650e8e 100%);
+}
+
+.about__team {
+  background-color: #E6FAF1;
+}
+
 .scroll__top {
   position: fixed;
   display: none;
@@ -1403,7 +1447,7 @@ section {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .header, #hoston-2, #hoston-3 {
+  .header, #hoston-2, #hoston-3, .about__header {
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -1502,7 +1546,7 @@ section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .header, #hoston-2, #hoston-3 {
+  .header, #hoston-2, #hoston-3, .about__header {
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -1564,6 +1608,9 @@ section {
 @media (min-width: 992px) {
   .header__top--info {
     border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+  }
+  .header__top--info ul li a {
+    font-size: 13px;
   }
   .hoston__nav--1, .hoston__nav--2, .hoston__nav--3 {
     background: transparent !important;
