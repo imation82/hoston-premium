@@ -156,7 +156,7 @@ $( document ).ready( function() {
 	// vmap
 	$("#vmap").length !== 0 && jQuery('#vmap').vectorMap({
 		map: 'world_en',
-		backgroundColor: '#ffffff',
+		backgroundColor: '#F0FAE6',
 		color: '#ffffff',
 		hoverOpacity: 0.7,
 		selectedColor: '#666666',
@@ -167,6 +167,6 @@ $( document ).ready( function() {
 		normalizeFunction: 'polynomial',
 	});
 		
-	$("#vmap").length !== 0 && jQuery("#vmap").vectorMap("set", "colors", { ca: "#C43526", au: "#0C4CA3", ru: "#0036A0" });
+	$("#vmap").length !== 0 && jQuery("#vmap").vectorMap("set", "colors", { br: "#009C37", us: "#C43526", au: "#0C4CA3", ru: "#0036A0" });
 
  });

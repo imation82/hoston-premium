@@ -1329,6 +1329,11 @@ section {
 }
 
 .hoston-3-testimonial {
+  background-color: transparent;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.location {
   background-color: #F0FAE6;
 }
 
@@ -1339,7 +1344,7 @@ section {
 }
 
 .hoston-3-news {
-  background-color: #F8F9F9;
+  background-color: #EBF8FF;
 }
 
 #hoston-3-footer {

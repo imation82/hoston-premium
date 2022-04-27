@@ -1238,10 +1238,15 @@ section {
 // Hoston 03 - Testimonial
 
 .hoston-3-testimonial {
-    background-color: $background-02;
+    background-color: transparent;
+    border-bottom: 1px solid #ECECEC;
 }
 
-// map
+// location
+
+.location {
+    background-color: $background-02;
+}
 
 #vmap {
     margin: 0 auto;
@@ -1252,7 +1257,7 @@ section {
 // Hoston 03 - News
 
 .hoston-3-news {
-    background-color: $background-01;
+    background-color: $background-05;
 }
 
 // Hoston 03 - Footer
