@@ -1330,7 +1330,6 @@ section {
 
 .hoston-3-testimonial {
   background-color: transparent;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .location {
@@ -1343,8 +1342,12 @@ section {
   height: 600px;
 }
 
-.hoston-3-news {
+.hoston-3-faq {
   background-color: #EBF8FF;
+}
+
+.hoston-3-news {
+  background-color: transparent;
 }
 
 #hoston-3-footer {
