@@ -159,6 +159,16 @@
                 <div class="col-lg-12">
                     <div class="header__content text-center">
                         <h1>Search for available domain names</h1>
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="d-flex align-items-center gap-3 my-4">
+                                    <i class="bi bi-search d-flex position-absolute search__icon"></i>
+                                    <input type="text" class="search__input form-control" placeholder="Search domain ..." aria-label="Search domain">
+                                    <button class="btn btn-hoston-primary">Search</button>
+                                </div>                                  
+                            </div>
+                        </div>
+                        <p>Is your domain name with a different registrar? Transfer it today!</p>                        
                     </div>
                 </div>
             </div>
@@ -166,8 +176,30 @@
     </header>
     <!-- end: header -->
 
+    <!-- right domain -->
+    <section class="right__domain">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">How to choose the right domain</h2>
+                    <h5 class="mb-4">Our experts put together these helpful tips for picking the perfect domain</h5>
+                    <ul class="brand__list">
+                        <li>Keep your name easy to remember</li>
+                        <li>Choose a name that fits your brand</li>
+                        <li>Register alternative TLDs for brand protection</li>
+                        <li>Register common domain misspellings</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/svg/right-domain.svg" class="img-fluid d-block mx-auto" alt="Domain">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: right domain -->
+
     <!-- domains -->
-    <section class="domain--search domains">
+    <section class="domains__search domains">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -180,13 +212,86 @@
                         </div>
                     </div>    
                 </div>                
-            </div>            
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-xl-3">
+                    <div class="domains__search--block">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>.com</h3>
+                            <p class="domains__search--price">$8.55/year</p>
+                        </div>
+                        <div class="mt-2">
+                            <a href="#" class="btn btn-hoston-anchor">Check availability <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="domains__search--block">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>.net</h3>
+                            <p class="domains__search--price">$6.55/year</p>
+                        </div>
+                        <div class="mt-2">
+                            <a href="#" class="btn btn-hoston-anchor">Check availability <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="domains__search--block">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>.org</h3>
+                            <p class="domains__search--price">$8.55/year</p>
+                        </div>
+                        <div class="mt-2">
+                            <a href="#" class="btn btn-hoston-anchor">Check availability <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="domains__search--block">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>.info</h3>
+                            <p class="domains__search--price">$4.55/year</p>
+                        </div>
+                        <div class="mt-2">
+                            <a href="#" class="btn btn-hoston-anchor">Check availability <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-lg-6 col-xl-3 collapse domain__search--more">
+                    <div class="domains__search--block">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>.biz</h3>
+                            <p class="domains__search--price">$6.55/year</p>
+                        </div>
+                        <div class="mt-2">
+                            <a href="#" class="btn btn-hoston-anchor">Check availability <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-lg-6 col-xl-3 collapse domain__search--more">
+                    <div class="domains__search--block">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>.co</h3>
+                            <p class="domains__search--price">$8.55/year</p>
+                        </div>
+                        <div class="mt-2">
+                            <a href="#" class="btn btn-hoston-anchor">Check availability <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>                    
+                </div>                 
+            </div>     
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a class="more-less btn btn-hoston-primary mt-4" data-bs-toggle="collapse" href=".domain__search--more" role="button" aria-expanded="false">Show more</a>
+                </div>
+            </div>       
         </div>
     </section>
     <!-- end: domains -->
 
     <!-- why choose us -->
-    <section class="domain--search choose">
+    <section class="domains__search choose">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -227,7 +332,7 @@
     <!-- end: why choose us -->
 
     <!-- support -->
-    <section class="domain--search hoston-3-support">
+    <section class="domains__search hoston-3-support">
         <figure class="stay__ornaments">
             <img class="stay__ornaments--bottom d-none d-md-block" src="assets/svg/inspired-bottom.svg" alt="Inspired">
             <img class="stay__ornaments--top d-none d-md-block" src="assets/svg/inspired-top.svg" alt="Inspired">
@@ -252,7 +357,7 @@
     <!-- end: support -->    
 
     <!-- f.a.q -->
-    <section class="domain--search faq">
+    <section class="domains__search faq">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -305,7 +410,7 @@
     <!-- end: f.a.q -->    
        
     <!-- testimonial -->
-    <section class="domain--search testimonial">
+    <section class="domains__search testimonial">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

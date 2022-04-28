@@ -173,6 +173,16 @@ $( document ).ready( function() {
 
 	$(".video").magnificPopup({
 		type: "iframe",
-	  });	
+	});
+	
+	// More & less
+	$(".more-less").click(function () {
+		$(this).toggleClass("active");
+		if ($(this).hasClass("active")) {
+		  $(this).text("Show less");
+		} else {
+		  $(this).text("Show more");
+		}
+	});	
 
  });

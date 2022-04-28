@@ -94,6 +94,23 @@ section {
 
 // Custom classes
 
+.more-less {
+    &::after {
+        content: '\F128';
+        font-family: 'bootstrap-icons';
+        font-size: 10px;
+        padding-left: 10px;
+    }
+}
+.more-less.active {
+    &::after {
+        content: '\F148';
+        font-family: 'bootstrap-icons';
+        font-size: 10px;
+        padding-left: 10px;
+    }
+}
+
 @keyframes smoothScroll {
     0% {
         transform: translateY(-40px);
@@ -1404,15 +1421,37 @@ section {
 
 // Inner pages - Domain Search
 
-.domain--search.domains {
+.domains__search {
+    &--block {
+        padding: 25px;
+        background-color: $white;
+        box-shadow: 0px 5px 20px -2px rgba(33,40,51,0.08);
+        border-radius: 5px; 
+        margin-bottom: 25px;       
+        a {
+            color: $black-600;
+            padding: 0;
+        }
+        i {
+            font-size: 17px;
+            margin-left: 10px;
+        }
+    }
+    &--price {
+        font-size: 25px;
+        color: $primary;
+    }
+}
+
+.domains__search.domains {
     background-color: $background-05;
 }
 
-.domain--search.faq {
+.domains__search.faq {
     padding-bottom: 120px;
 }
 
-.domain--search.testimonial {
+.domains__search.testimonial {
     background-color: $background-05;
 }
 
