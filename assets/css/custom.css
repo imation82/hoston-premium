@@ -1426,6 +1426,25 @@ section {
   background-color: #E6FAF1;
 }
 
+.about__team--block {
+  position: relative;
+}
+
+.about__team--content {
+  position: relative;
+}
+
+.about__team--info::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  background: #F7421E;
+  height: 2px;
+  width: 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .partners__stat h3 {
   color: #F7421E;
 }

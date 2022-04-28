@@ -1349,6 +1349,22 @@ section {
 
 .about__team {
     background-color: $background-03;
+    &--block {
+        position: relative;
+    }
+    &--content {
+        position: relative;   
+    }
+    &--info::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        background: $primary;
+        height: 2px;
+        width: 20px;
+        transform: translate(-50%, -50%);
+    }
+
 }
 
 .partners {
