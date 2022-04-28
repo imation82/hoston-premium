@@ -1402,6 +1402,14 @@ section {
   background-color: #E6FAF1;
 }
 
+.about__mission--content {
+  background-color: #FFFFFF;
+  padding: 30px;
+  -webkit-box-shadow: 0px 5px 20px -2px rgba(33, 40, 51, 0.08);
+          box-shadow: 0px 5px 20px -2px rgba(33, 40, 51, 0.08);
+  border-radius: 5px;
+}
+
 .about__location {
   background-color: #FFFFFF;
 }
@@ -1416,6 +1424,42 @@ section {
 
 .about__team {
   background-color: #E6FAF1;
+}
+
+.partners__stat h3 {
+  color: #F7421E;
+}
+
+.partners__video {
+  position: relative;
+}
+
+.partners__video--block {
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 85px;
+}
+
+.partners__video--icon {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 70px;
+  color: #F7421E;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .scroll__top {

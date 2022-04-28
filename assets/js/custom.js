@@ -169,4 +169,10 @@ $( document ).ready( function() {
 		
 	$("#vmap").length !== 0 && jQuery("#vmap").vectorMap("set", "colors", { br: "#9aa78c", us: "#9aa78c", au: "#9aa78c", ru: "#9aa78c" });
 
+	// video
+
+	$(".video").magnificPopup({
+		type: "iframe",
+	  });	
+
  });
