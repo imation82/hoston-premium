@@ -1481,6 +1481,18 @@ section {
           transform: translate(-50%, -50%);
 }
 
+.domain--search.domains {
+  background-color: #EBF8FF;
+}
+
+.domain--search.faq {
+  padding-bottom: 120px;
+}
+
+.domain--search.testimonial {
+  background-color: #EBF8FF;
+}
+
 .scroll__top {
   position: fixed;
   display: none;
