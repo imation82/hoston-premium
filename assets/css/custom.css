@@ -1208,6 +1208,11 @@ section {
   border-radius: 5px;
 }
 
+.account__create .form-check input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
 .account__create input:focus {
   border-color: #CED4DA;
   -webkit-box-shadow: none;
