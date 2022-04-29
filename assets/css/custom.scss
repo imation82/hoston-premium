@@ -667,7 +667,7 @@ section {
         }
         a {
             font-size: 14px;
-            color: $black-300;
+            color: #D7D7D7;
             text-decoration: none;
             transition: all 0.3s ease;
             &:hover,
@@ -678,7 +678,7 @@ section {
         }
     }
     p {
-        color: $black-300;
+        color: #D7D7D7;
     }
     &__social {
         .list-inline-item:not(:last-child) {
@@ -1811,7 +1811,7 @@ section {
     section {
         padding-top: 40px;
         padding-bottom: 40px;
-    }
+    }  
     .header {
         padding-top: 130px;
         padding-bottom: 130px;
@@ -1997,6 +1997,7 @@ section {
     .header {
         &__top {
             &--info {
+                display: block !important;
                 border-bottom: 1px solid rgba(255,255,255,0.07) !important;   
                 ul {
                     li {
@@ -2056,10 +2057,10 @@ section {
 
         .nav-link {
             color: $white;
-            font-size: 13px;
+            font-size: 15px;
             padding-right: 0px;
             padding-left: 8px;
-            margin-right: 45px;          
+            margin-right: 30px;          
         }
         .dropdown-menu {
             font-size: 13px;
@@ -2124,12 +2125,10 @@ section {
     .header {
         &__top {
             &--info {
-                // border-bottom: none;   
                 display: none;
             }
         }
-    }
-
+    }      
     .navbar-toggler-icon {
         &::after {
             content: "\F456";
@@ -2167,7 +2166,7 @@ section {
 
     .nav-link {
         color: $white;
-        font-size: 13px;
+        font-size: 15px;
         i {
             margin-right: 10px;
         }

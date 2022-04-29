@@ -717,7 +717,7 @@ section {
 
 .footer__links a {
   font-size: 14px;
-  color: #A6A6A7;
+  color: #D7D7D7;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -728,7 +728,7 @@ section {
 }
 
 .footer p {
-  color: #A6A6A7;
+  color: #D7D7D7;
 }
 
 .footer__social .list-inline-item:not(:last-child) {
@@ -2076,6 +2076,7 @@ section {
 
 @media (min-width: 992px) {
   .header__top--info {
+    display: block !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
   }
   .header__top--info ul li a {
@@ -2122,10 +2123,10 @@ section {
   }
   .hoston__nav--1 .nav-link, .hoston__nav--2 .nav-link, .hoston__nav--3 .nav-link {
     color: #FFFFFF;
-    font-size: 13px;
+    font-size: 15px;
     padding-right: 0px;
     padding-left: 8px;
-    margin-right: 45px;
+    margin-right: 30px;
   }
   .hoston__nav--1 .dropdown-menu, .hoston__nav--2 .dropdown-menu, .hoston__nav--3 .dropdown-menu {
     font-size: 13px;
@@ -2201,7 +2202,7 @@ section {
   }
   .nav-link {
     color: #FFFFFF;
-    font-size: 13px;
+    font-size: 15px;
   }
   .nav-link i {
     margin-right: 10px;
