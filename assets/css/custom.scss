@@ -1126,6 +1126,12 @@ section {
         padding: 50px;
         background-color: $white;
         border-radius: 5px;
+        input {
+            &:focus {
+                border-color: #CED4DA;
+                box-shadow: none;
+            }
+        }
         &--btn {
             button {
                 display: flex;

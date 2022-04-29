@@ -1208,6 +1208,12 @@ section {
   border-radius: 5px;
 }
 
+.account__create input:focus {
+  border-color: #CED4DA;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .account__create--btn button {
   display: -webkit-box;
   display: -ms-flexbox;
