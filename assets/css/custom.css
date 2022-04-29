@@ -1880,6 +1880,25 @@ section {
   margin-bottom: 15px;
 }
 
+.blog__column--pagination ul {
+  margin-bottom: 0;
+}
+
+.blog__column--pagination ul .page-link {
+  color: #909192;
+}
+
+.blog__column--pagination ul .page-link:hover {
+  color: #FFFFFF;
+  background-color: #F7421E;
+  border-color: #F7421E;
+}
+
+.blog__column--pagination ul .page-item.active .page-link {
+  background-color: #F7421E;
+  border-color: #F7421E;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;

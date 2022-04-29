@@ -1778,6 +1778,29 @@ section {
     }
 }
 
+// Inner pages - Blog column
+
+.blog__column {
+    &--pagination {
+        ul {
+            margin-bottom: 0;
+            .page-link {
+                color: $black-400;
+                &:hover {
+                    color: $white;
+                    background-color: $primary;
+                    border-color: $primary;
+                }
+            }
+            .page-item.active {
+                .page-link {
+                    background-color: $primary;
+                    border-color: $primary;
+                }                
+            }
+        }
+    }
+}
 
 // Media queries
 
@@ -1897,7 +1920,6 @@ section {
             padding: 15px;
         }        
     }
-
 }
 
 @media (min-width:768px) and (max-width:991px) {
