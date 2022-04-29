@@ -702,19 +702,19 @@ section {
     }
     &__phone {
         a {
-            color: $black-300;
+            color: #D7D7D7;
             text-decoration: none;
             transition: all 0.3s ease;
             &:hover,
             &:focus,
             &:active {
-                color: $black-400;
+                color: #D7D7D7;
                 text-decoration: none;
             }
         }
         i {
             font-size: 20px;
-            color: $black-300;
+            color: #D7D7D7;
             margin-right: 10px;
         }
     }
@@ -1997,7 +1997,6 @@ section {
     .header {
         &__top {
             &--info {
-                display: block !important;
                 border-bottom: 1px solid rgba(255,255,255,0.07) !important;   
                 ul {
                     li {
@@ -2121,14 +2120,7 @@ section {
 
 }
 
-@media (min-width:320px) {
-    .header {
-        &__top {
-            &--info {
-                display: none;
-            }
-        }
-    }      
+@media (min-width:320px) {  
     .navbar-toggler-icon {
         &::after {
             content: "\F456";

@@ -756,20 +756,20 @@ section {
 }
 
 .footer__phone a {
-  color: #A6A6A7;
+  color: #D7D7D7;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .footer__phone a:hover, .footer__phone a:focus, .footer__phone a:active {
-  color: #909192;
+  color: #D7D7D7;
   text-decoration: none;
 }
 
 .footer__phone i {
   font-size: 20px;
-  color: #A6A6A7;
+  color: #D7D7D7;
   margin-right: 10px;
 }
 
@@ -2076,7 +2076,6 @@ section {
 
 @media (min-width: 992px) {
   .header__top--info {
-    display: block !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
   }
   .header__top--info ul li a {
@@ -2172,9 +2171,6 @@ section {
 }
 
 @media (min-width: 320px) {
-  .header__top--info {
-    display: none;
-  }
   .navbar-toggler-icon::after {
     content: "\F456";
     font-family: 'bootstrap-icons';
