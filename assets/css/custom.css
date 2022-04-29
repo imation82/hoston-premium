@@ -2172,7 +2172,7 @@ section {
 
 @media (min-width: 320px) {
   .header__top--info {
-    border-bottom: none;
+    display: none;
   }
   .navbar-toggler-icon::after {
     content: "\F456";
