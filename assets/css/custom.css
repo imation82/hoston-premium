@@ -1666,7 +1666,7 @@ section {
 
 .single__blog ul {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding-left: 16px;
 }
 
@@ -1708,6 +1708,61 @@ section {
 .single__blog--related ul {
   margin: 0px 0px 15px 0px;
   padding-left: 0;
+}
+
+.single__blog--categories ul li a {
+  text-decoration: none;
+  color: #636466;
+}
+
+.single__blog--categories ul li a:hover, .single__blog--categories ul li a:focus {
+  color: #F7421E;
+}
+
+.single__blog--date i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.single__blog--news-lists a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.single__blog--news-lists a:hover, .single__blog--news-lists a:focus {
+  color: #F7421E;
+}
+
+.single__blog--news-lists:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.single__blog--tags ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.single__blog--tags ul li {
+  margin-bottom: 10px;
+}
+
+.single__blog--tags ul li a {
+  color: #636466;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: #E9E9E9;
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+
+.single__blog--tags ul li :hover {
+  background-color: #F7421E;
+  color: #FFFFFF;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1806,6 +1861,9 @@ section {
   #vmap {
     width: 100% !important;
     height: 300px !important;
+  }
+  .single__blog--left, .single__blog--right {
+    padding: 15px;
   }
 }
 
