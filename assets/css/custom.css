@@ -1765,6 +1765,47 @@ section {
   color: #FFFFFF;
 }
 
+.single__blog--instagram {
+  display: inline-block;
+}
+
+.single__blog--instagram ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.single__blog--instagram ul li {
+  margin-bottom: 10px;
+}
+
+.single__blog--block:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.single__blog--block:hover i {
+  opacity: 1;
+}
+
+.single__blog--block:hover .gallery__opacity {
+  opacity: 0.5;
+}
+
+.single__blog--block i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  font-size: 18px;
+  opacity: 0;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;

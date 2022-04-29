@@ -1685,7 +1685,37 @@ section {
         }
     }
     &--instagram {
-
+        display: inline-block;
+        ul {
+            padding-left: 0;
+            margin: 0;
+            li {
+                margin-bottom: 10px;
+            }
+        }        
+    }
+    &--block {
+        &:hover {
+            cursor: pointer;
+            background: rgba(0,0,0,0.8);
+            border-radius: 5px;
+            i {
+                opacity: 1;
+            }
+            .gallery__opacity {
+                opacity: 0.5;
+            }
+        }
+        i {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            font-size: 18px;
+            opacity: 0;
+        }
     }
 }
 
