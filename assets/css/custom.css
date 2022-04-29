@@ -1899,6 +1899,75 @@ section {
   border-color: #F7421E;
 }
 
+.contact__info--block {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 20px -2px rgba(33, 40, 51, 0.08);
+          box-shadow: 0px 5px 20px -2px rgba(33, 40, 51, 0.08);
+  padding: 40px;
+}
+
+.contact__info--block h4::after {
+  content: '\F138';
+  font-family: 'bootstrap-icons';
+  position: absolute;
+  font-size: 15px;
+  margin-left: 10px;
+  color: #000000;
+}
+
+.contact__info--block h4 a {
+  color: #000000;
+}
+
+.contact__info--block h4 a:hover, .contact__info--block h4 a:focus {
+  color: #F7421E !important;
+}
+
+.contact__info--block a {
+  color: #636466;
+  text-decoration: none;
+}
+
+.contact__info--block a:hover, .contact__info--block a:focus {
+  color: #F7421E;
+}
+
+.contact__info--form {
+  -webkit-box-shadow: 0px 5px 20px -2px rgba(33, 40, 51, 0.08);
+          box-shadow: 0px 5px 20px -2px rgba(33, 40, 51, 0.08);
+  padding: 40px;
+}
+
+.contact__info--form .form-control {
+  border: 1px solid #E3E3E3;
+  font-size: 14px;
+}
+
+.contact__info--form .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact__info--form .form-control:focus ~ label {
+  opacity: 1;
+}
+
+.contact__info .form-floating input {
+  margin-bottom: 15px;
+}
+
+.contact__info .form-floating label {
+  color: #636466;
+}
+
+.contact__info .form-floating textarea {
+  height: 150px;
+}
+
+.contact__info textarea {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;
@@ -2003,6 +2072,9 @@ section {
     padding: 15px;
   }
   .single__blog--leave--reply {
+    padding: 15px;
+  }
+  .contact__info--form {
     padding: 15px;
   }
 }

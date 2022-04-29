@@ -1802,6 +1802,69 @@ section {
     }
 }
 
+// Inner pages - Contact
+
+.contact__info {
+    &--block {
+        background-color: $white;
+        box-shadow: 0px 5px 20px -2px rgba(33,40,51,0.08);
+        padding: 40px;
+        h4::after {
+            content: '\F138';
+            font-family: 'bootstrap-icons';
+            position: absolute;
+            font-size: 15px;
+            margin-left: 10px;
+            color: $black;
+        }
+        h4 {
+            a {
+                color: $black;
+                &:hover,
+                &:focus {
+                    color: $primary !important;
+                }
+            }            
+        }
+        a {
+            color: $black-600;
+            text-decoration: none;
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+    }
+    &--form {
+        box-shadow: 0px 5px 20px -2px rgba(33,40,51,0.08);
+        padding: 40px;
+        .form-control {
+            border: 1px solid #E3E3E3;
+            font-size: 14px;
+            &:focus {
+                box-shadow: none;
+                ~label {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .form-floating {
+        input {
+            margin-bottom: 15px;
+        }   
+        label {
+            color: $black-600;
+        }    
+        textarea {
+            height: 150px;
+        }      
+    }
+    textarea {
+        margin-bottom: 15px;
+    }      
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
@@ -1919,6 +1982,11 @@ section {
         &--leave--reply {
             padding: 15px;
         }        
+    }
+    .contact__info {
+        &--form {
+            padding: 15px;
+        }
     }
 }
 
