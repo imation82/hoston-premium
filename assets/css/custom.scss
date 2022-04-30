@@ -435,7 +435,7 @@ section {
     }
 }
 
-// Plan 
+// table 
 
 .plan {
     .accordion-item {
@@ -1254,6 +1254,87 @@ section {
     }    
 }
 
+.table__block {
+    border: 1px solid #E1E1E1;
+    &--inner {
+        padding: 40px 40px 20px 40px;
+        background-image: url(../images/support-bg.jpg);
+        background-position: right;
+        background-size: cover;
+        h3,
+        h4 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+    &--inner2 {
+        padding: 40px 40px 20px 40px;
+        background-image: url(../images/header-bg-2.jpg);
+        background-position: right;
+        background-size: cover;
+        h3,
+        h4 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+    &--inner3 {
+        padding: 40px 40px 20px 40px;
+        background-image: url(../svg/header-bg-3.svg);
+        background-position: left;
+        background-size: cover;
+        h3,
+        h4 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            opacity: 0.8;
+        }
+    }    
+    &--price {
+        padding-top: 10px;
+        span {
+            color: $white;
+            opacity: 0.8;
+            @include fontStyle('Fira Sans', 25px, 400, 40px);            
+        }
+        small {
+            color: $white;
+            @include fontStyle('Fira Sans', 22px, 400, 40px); 
+        }
+    }
+    &--lists {
+        margin-bottom: 0;
+        li::before {
+            content: "\F138";
+            font-family: "bootstrap-icons";
+            font-size: 11px;
+            font-weight: 700;
+            margin-right: 10px;
+            color: #38ad43;
+        }
+        li {
+            padding: 10px 40px;
+        }
+        li:nth-child(odd) {
+            background-color: $background-01;
+        }     
+    }
+    &--btn {
+        .btn {
+            width: 200px;
+            margin-left: 40px;            
+        }
+    }
+}
+
 // Hoston 03 - Support
 
 .hoston-3-support {
@@ -1920,6 +2001,10 @@ section {
             color: $white;
         }        
     }
+}
+
+.wordpress__hosting.choose {
+    background-color: transparent !important;
 }
 
 .wordpress__hosting.packages {

@@ -1335,6 +1335,108 @@ section {
   color: #F7421E;
 }
 
+.table__block {
+  border: 1px solid #E1E1E1;
+}
+
+.table__block--inner {
+  padding: 40px 40px 20px 40px;
+  background-image: url(../images/support-bg.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+.table__block--inner h3,
+.table__block--inner h4 {
+  color: #FFFFFF;
+}
+
+.table__block--inner p {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.table__block--inner2 {
+  padding: 40px 40px 20px 40px;
+  background-image: url(../images/header-bg-2.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+.table__block--inner2 h3,
+.table__block--inner2 h4 {
+  color: #FFFFFF;
+}
+
+.table__block--inner2 p {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.table__block--inner3 {
+  padding: 40px 40px 20px 40px;
+  background-image: url(../svg/header-bg-3.svg);
+  background-position: left;
+  background-size: cover;
+}
+
+.table__block--inner3 h3,
+.table__block--inner3 h4 {
+  color: #FFFFFF;
+}
+
+.table__block--inner3 p {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.table__block--price {
+  padding-top: 10px;
+}
+
+.table__block--price span {
+  color: #FFFFFF;
+  opacity: 0.8;
+  font-family: "Fira Sans";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.table__block--price small {
+  color: #FFFFFF;
+  font-family: "Fira Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.table__block--lists {
+  margin-bottom: 0;
+}
+
+.table__block--lists li::before {
+  content: "\F138";
+  font-family: "bootstrap-icons";
+  font-size: 11px;
+  font-weight: 700;
+  margin-right: 10px;
+  color: #38ad43;
+}
+
+.table__block--lists li {
+  padding: 10px 40px;
+}
+
+.table__block--lists li:nth-child(odd) {
+  background-color: #F8F9F9;
+}
+
+.table__block--btn .btn, .table__block--btn .btn-hoston-primary, .table__block--btn .btn-hoston-outline, .table__block--btn .btn-hoston-black, .table__block--btn .best__service--anchor a, .best__service--anchor .table__block--btn a {
+  width: 200px;
+  margin-left: 40px;
+}
+
 .hoston-3-support {
   position: relative;
   background-image: url(../images/support-bg.jpg);
@@ -2027,6 +2129,10 @@ section {
 
 .wordpress__header--lists li {
   color: #FFFFFF;
+}
+
+.wordpress__hosting.choose {
+  background-color: transparent !important;
 }
 
 .wordpress__hosting.packages {
