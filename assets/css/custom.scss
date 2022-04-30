@@ -110,6 +110,17 @@ section {
 
 // Custom classes
 
+.typograhpy__1 {
+    h1 {
+        color: $white;
+    }
+    p {
+        @include fontStyle('Fira Sans', 16px, 400, 35px);
+        color: $white;
+        opacity: 0.8;
+    }    
+}
+
 .more-less {
     &::after {
         content: '\F128';
@@ -1980,14 +1991,7 @@ section {
 .reseller__header {
     @extend .header;
     background-image: url(../svg/hero-bg-v4.svg);
-    h1 {
-        color: $white;
-    }
-    p {
-        @include fontStyle('Fira Sans', 16px, 400, 35px);
-        color: $white;
-        opacity: 0.8;
-    }
+    @extend .typograhpy__1;
 }
 
 .reseller__hosting.choose {
@@ -2003,14 +2007,7 @@ section {
 .wordpress__header {
     @extend .header;
     background-image: url(../svg/hero-bg-v4.svg);
-    h1 {
-        color: $white;
-    }
-    p {
-        @include fontStyle('Fira Sans', 16px, 400, 35px);
-        color: $white;
-        opacity: 0.8;
-    }
+    @extend .typograhpy__1;
     &--lists {
         padding-left: 15px;
         li {
@@ -2031,6 +2028,32 @@ section {
 }
 
 .wordpress__hosting.inner__faq {
+    background-color: $background-03;
+}
+
+// Inner pages - Web hosting
+
+.web__header {
+    @extend .header;
+    background-image: url(../svg/hero-bg-v4.svg);
+    @extend .typograhpy__1;
+    &--lists {
+        padding-left: 15px;
+        li {
+            color: $white;
+        }        
+    }
+}
+
+.web__hosting.why__love {
+    background-color: $background-05;
+}
+
+.web__hosting.inner__faq {
+    background-color: $background-02;
+}
+
+.high__quality {
     background-color: $background-03;
 }
 

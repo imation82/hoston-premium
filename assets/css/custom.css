@@ -129,6 +129,19 @@ section {
   padding-bottom: 120px;
 }
 
+.typograhpy__1 h1, .reseller__header h1, .wordpress__header h1, .web__header h1 {
+  color: #FFFFFF;
+}
+
+.typograhpy__1 p, .reseller__header p, .wordpress__header p, .web__header p {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
 .more-less::after {
   content: '\F128';
   font-family: 'bootstrap-icons';
@@ -317,7 +330,7 @@ section {
   text-decoration: none;
 }
 
-.header, #hoston-2, #hoston-3, .about__header, .reseller__header, .wordpress__header {
+.header, #hoston-2, #hoston-3, .about__header, .reseller__header, .wordpress__header, .web__header {
   background-image: url(../images/header-bg.jpg);
   background-size: cover;
   height: 100%;
@@ -2104,19 +2117,6 @@ section {
   background-image: url(../svg/hero-bg-v4.svg);
 }
 
-.reseller__header h1 {
-  color: #FFFFFF;
-}
-
-.reseller__header p {
-  font-family: "Fira Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 35px;
-  color: #FFFFFF;
-  opacity: 0.8;
-}
-
 .reseller__hosting.choose {
   background-color: #F8F9F9;
 }
@@ -2127,19 +2127,6 @@ section {
 
 .wordpress__header {
   background-image: url(../svg/hero-bg-v4.svg);
-}
-
-.wordpress__header h1 {
-  color: #FFFFFF;
-}
-
-.wordpress__header p {
-  font-family: "Fira Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 35px;
-  color: #FFFFFF;
-  opacity: 0.8;
 }
 
 .wordpress__header--lists {
@@ -2166,6 +2153,30 @@ section {
   background-color: #E6FAF1;
 }
 
+.web__header {
+  background-image: url(../svg/hero-bg-v4.svg);
+}
+
+.web__header--lists {
+  padding-left: 15px;
+}
+
+.web__header--lists li {
+  color: #FFFFFF;
+}
+
+.web__hosting.why__love {
+  background-color: #EBF8FF;
+}
+
+.web__hosting.inner__faq {
+  background-color: #F0FAE6;
+}
+
+.high__quality {
+  background-color: #E6FAF1;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;
@@ -2174,7 +2185,7 @@ section {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .header, #hoston-2, #hoston-3, .about__header, .reseller__header, .wordpress__header {
+  .header, #hoston-2, #hoston-3, .about__header, .reseller__header, .wordpress__header, .web__header {
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -2186,19 +2197,19 @@ section {
     font-size: 15px;
     line-height: 25px;
   }
-  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1 {
+  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1, .wordpress__header.web__header h1 {
     font-size: 25px;
     line-height: 40px;
   }
-  .wordpress__header.header p, .wordpress__header#hoston-2 p, .wordpress__header#hoston-3 p, .wordpress__header.about__header p, .wordpress__header.reseller__header p, .wordpress__header p {
+  .wordpress__header.header p, .wordpress__header#hoston-2 p, .wordpress__header#hoston-3 p, .wordpress__header.about__header p, .wordpress__header.reseller__header p, .wordpress__header p, .wordpress__header.web__header p {
     font-size: 15px;
     line-height: 25px;
   }
-  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1 {
+  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1, .reseller__header.web__header h1 {
     font-size: 25px;
     line-height: 40px;
   }
-  .reseller__header.header p, .reseller__header#hoston-2 p, .reseller__header#hoston-3 p, .reseller__header.about__header p, .reseller__header p, .reseller__header.wordpress__header p {
+  .reseller__header.header p, .reseller__header#hoston-2 p, .reseller__header#hoston-3 p, .reseller__header.about__header p, .reseller__header p, .reseller__header.wordpress__header p, .reseller__header.web__header p {
     font-size: 15px;
     line-height: 25px;
   }
@@ -2301,7 +2312,7 @@ section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .header, #hoston-2, #hoston-3, .about__header, .reseller__header, .wordpress__header {
+  .header, #hoston-2, #hoston-3, .about__header, .reseller__header, .wordpress__header, .web__header {
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -2313,19 +2324,19 @@ section {
     font-size: 15px;
     line-height: 30px;
   }
-  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1 {
+  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1, .wordpress__header.web__header h1 {
     font-size: 30px;
     line-height: 45px;
   }
-  .wordpress__header.header p, .wordpress__header#hoston-2 p, .wordpress__header#hoston-3 p, .wordpress__header.about__header p, .wordpress__header.reseller__header p, .wordpress__header p {
+  .wordpress__header.header p, .wordpress__header#hoston-2 p, .wordpress__header#hoston-3 p, .wordpress__header.about__header p, .wordpress__header.reseller__header p, .wordpress__header p, .wordpress__header.web__header p {
     font-size: 15px;
     line-height: 30px;
   }
-  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1 {
+  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1, .reseller__header.web__header h1 {
     font-size: 30px;
     line-height: 45px;
   }
-  .reseller__header.header p, .reseller__header#hoston-2 p, .reseller__header#hoston-3 p, .reseller__header.about__header p, .reseller__header p, .reseller__header.wordpress__header p {
+  .reseller__header.header p, .reseller__header#hoston-2 p, .reseller__header#hoston-3 p, .reseller__header.about__header p, .reseller__header p, .reseller__header.wordpress__header p, .reseller__header.web__header p {
     font-size: 15px;
     line-height: 30px;
   }
@@ -2374,11 +2385,11 @@ section {
     font-size: 40px;
     line-height: 50px;
   }
-  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1 {
+  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1, .wordpress__header.web__header h1 {
     font-size: 40px;
     line-height: 50px;
   }
-  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1 {
+  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1, .reseller__header.web__header h1 {
     font-size: 40px;
     line-height: 50px;
   }
