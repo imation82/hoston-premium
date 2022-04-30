@@ -56,6 +56,25 @@ p {
   margin: 0;
 }
 
+.form-switch .form-check-input {
+  width: 4em;
+}
+
+.form-check-input {
+  height: 2em;
+  border: 1px solid #F7421E;
+  background-image: url(../svg/toggle-circle.svg) !important;
+}
+
+.form-check-input:focus {
+  border-color: #F7421E;
+}
+
+.form-check-input:checked {
+  background-color: #FFFFFF;
+  border-color: #F7421E;
+}
+
 .breadcrumb .breadcrumb-item a {
   color: #FFFFFF;
   text-decoration: none;
@@ -2167,6 +2186,22 @@ section {
     font-size: 15px;
     line-height: 25px;
   }
+  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .wordpress__header.header p, .wordpress__header#hoston-2 p, .wordpress__header#hoston-3 p, .wordpress__header.about__header p, .wordpress__header.reseller__header p, .wordpress__header p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .reseller__header.header p, .reseller__header#hoston-2 p, .reseller__header#hoston-3 p, .reseller__header.about__header p, .reseller__header p, .reseller__header.wordpress__header p {
+    font-size: 15px;
+    line-height: 25px;
+  }
   .search {
     padding: 20px;
   }
@@ -2278,6 +2313,22 @@ section {
     font-size: 15px;
     line-height: 30px;
   }
+  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .wordpress__header.header p, .wordpress__header#hoston-2 p, .wordpress__header#hoston-3 p, .wordpress__header.about__header p, .wordpress__header.reseller__header p, .wordpress__header p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .reseller__header.header p, .reseller__header#hoston-2 p, .reseller__header#hoston-3 p, .reseller__header.about__header p, .reseller__header p, .reseller__header.wordpress__header p {
+    font-size: 15px;
+    line-height: 30px;
+  }
   .statistics {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -2320,6 +2371,14 @@ section {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .header__content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .reseller__header.header h1, .reseller__header#hoston-2 h1, .reseller__header#hoston-3 h1, .reseller__header.about__header h1, .reseller__header h1, .reseller__header.wordpress__header h1 {
     font-size: 40px;
     line-height: 50px;
   }

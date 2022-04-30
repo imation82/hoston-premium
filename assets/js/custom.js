@@ -25,6 +25,25 @@ $('#page__scroll').click(function() {
 	return false;
 });
 
+
+// Table price switcher
+function check() {
+	var checkBox = document.getElementById("price__table");
+	var text1 = document.getElementsByClassName("table__block--month");
+	var text2 = document.getElementsByClassName("table__block--year");
+  
+	for (var i = 0; i < text1.length; i++) {
+	  if (checkBox.checked == true) {
+		text2[i].style.display = "block";
+		text1[i].style.display = "none";
+	  } else if (checkBox.checked == false) {
+		text2[i].style.display = "none";
+		text1[i].style.display = "block";
+	  }
+	}
+  }
+  check();  
+
 $( document ).ready( function() {
 
 	// View all features

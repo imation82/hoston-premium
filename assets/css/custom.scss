@@ -44,6 +44,22 @@ p {
 
 // Common
 
+.form-switch .form-check-input {
+    width: 4em;
+}
+.form-check-input {
+    height: 2em;
+    border: 1px solid $primary;
+    &:focus {
+        border-color: $primary;
+    }
+    background-image: url(../svg/toggle-circle.svg) !important;
+}
+.form-check-input:checked {
+    background-color: $white;
+    border-color: $primary;
+}
+
 .breadcrumb {
     .breadcrumb-item {
         a {
@@ -2032,10 +2048,30 @@ section {
         padding-top: 130px;
         padding-bottom: 130px;
         &__content {
-            h1 { @include fontStyle(null, 25px, null, 40px); }
-            p { @include fontStyle(null, 15px, null, 25px); }
+            h1 { 
+                @include fontStyle(null, 25px, null, 40px); 
+            }
+            p { 
+                @include fontStyle(null, 15px, null, 25px); 
+            }
         }
     }
+    .wordpress__header.header {
+        h1 { 
+            @include fontStyle(null, 25px, null, 40px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 25px); 
+        }        
+    }
+    .reseller__header.header {
+        h1 { 
+            @include fontStyle(null, 25px, null, 40px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 25px); 
+        }        
+    }    
     .search {
         padding: 20px;
     }
@@ -2155,10 +2191,30 @@ section {
         padding-top: 150px;
         padding-bottom: 150px;        
         &__content {
-            h1 { @include fontStyle(null, 30px, null, 45px); }
-            p { @include fontStyle(null, 15px, null, 30px); }
+            h1 { 
+                @include fontStyle(null, 30px, null, 45px); 
+            }
+            p { 
+                @include fontStyle(null, 15px, null, 30px); 
+            }
         }
     }
+    .wordpress__header.header {
+        h1 { 
+            @include fontStyle(null, 30px, null, 45px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 30px); 
+        }        
+    }
+    .reseller__header.header {
+        h1 { 
+            @include fontStyle(null, 30px, null, 45px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 30px); 
+        }        
+    }    
     .statistics {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -2209,9 +2265,21 @@ section {
 @media (min-width:992px) and (max-width:1199px) {   
     .header {
         &__content {
-            h1 { @include fontStyle(null, 40px, null, 50px); }
+            h1 { 
+                @include fontStyle(null, 40px, null, 50px); 
+            }
         }
     }
+    .wordpress__header.header {
+        h1 { 
+            @include fontStyle(null, 40px, null, 50px); 
+        }        
+    }
+    .reseller__header.header {
+        h1 { 
+            @include fontStyle(null, 40px, null, 50px); 
+        }        
+    }    
 }
 
 @media (min-width:992px) {

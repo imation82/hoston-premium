@@ -385,10 +385,14 @@
         </div>
         <div class="container">
             <div class="row mt-5">
-                <div class="col-lg-12 text-center">
-                    Monthly / Yearly
+                <div class="col-lg-12 text-center">              
+                    <div class="form-check form-switch d-flex align-items-center justify-content-center">
+                        <h4 class="mb-0">Monthly</h4>
+                        <input class="mx-3 form-check-input" type="checkbox" id="price__table" onclick="check()">
+                        <h4 class="mb-0">Yearly</h4>
+                      </div>                    
                 </div>
-            </div>
+            </div>    
             <div class="row mt-5">
                 <div class="col-lg-4">
                     <div class="table__block mb-3 mb-lg-0">
@@ -397,11 +401,15 @@
                             <p>The perfect table for a simple website and one domain name.</p>
                             <div class="table__block--bottom mt-3">
                                 <h4>Starting at</h4>
-                                <div class="table__block--price mb-3">
+                                <div class="table__block--price mb-3 table__block--month">
                                     <span>$3.55</span>
-                                    <small>/mo*</small>
+                                    <small>/month*</small>
                                 </div>
-                            </div>                           
+                                <div class="table__block--price mb-3 table__block--year">
+                                    <span>$42.6</span>
+                                    <small>/year*</small>
+                                </div>                                
+                            </div>                                                          
                         </div>
                         <ul class="list-unstyled table__block--lists">
                             <li>Basic support</li>
@@ -424,10 +432,14 @@
                             <p>The perfect table for a simple website and one domain name.</p>
                             <div class="table__block--bottom mt-3">
                                 <h4>Starting at</h4>
-                                <div class="table__block--price mb-3">
+                                <div class="table__block--price mb-3 table__block--month">
                                     <span>$8.55</span>
-                                    <small>/mo*</small>
+                                    <small>/month*</small>
                                 </div>
+                                <div class="table__block--price mb-3 table__block--year">
+                                    <span>$102.6</span>
+                                    <small>/year*</small>
+                                </div>                                
                             </div>                           
                         </div>
                         <ul class="list-unstyled table__block--lists">
@@ -451,10 +463,14 @@
                             <p>The perfect table for a simple website and one domain name.</p>
                             <div class="table__block--bottom mt-3">
                                 <h4>Starting at</h4>
-                                <div class="table__block--price mb-3">
+                                <div class="table__block--price mb-3 table__block--month">
                                     <span>$10.55</span>
-                                    <small>/mo*</small>
+                                    <small>/month*</small>
                                 </div>
+                                <div class="table__block--price mb-3 table__block--year">
+                                    <span>$126.6</span>
+                                    <small>/year*</small>
+                                </div>                                
                             </div>                           
                         </div>
                         <ul class="list-unstyled table__block--lists">
