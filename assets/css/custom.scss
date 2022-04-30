@@ -1901,6 +1901,38 @@ section {
     background-color: $background-01;
 }
 
+// Inner pages - Wordpress hosting
+
+.wordpress__header {
+    @extend .header;
+    background-image: url(../svg/hero-bg-v4.svg);
+    h1 {
+        color: $white;
+    }
+    p {
+        @include fontStyle('Fira Sans', 16px, 400, 35px);
+        color: $white;
+        opacity: 0.8;
+    }
+    &--lists {
+        padding-left: 15px;
+        li {
+            color: $white;
+        }        
+    }
+}
+
+.wordpress__hosting.packages {
+    background-color: $background-03;
+}
+.wordpress__hosting.why__love {
+    background-color: $background-03;
+}
+
+.wordpress__hosting.inner__faq {
+    background-color: $background-03;
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
