@@ -1,17 +1,20 @@
-
-// Scroll function with menu and topbar
+// Scroll function with menu, topbar, scroll top
 $(window).scroll(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 150) {
+            $('.scroll__top').fadeIn();
+        } else {
+            $('.scroll__top').fadeOut();
+        }
+    }); 	
 	var windowSize = $(window).width();
-
 	if ($(this).scrollTop() > 50 && (windowSize > 992)) {
-		$('.scroll__top').fadeIn();
 		$('.header__top--info').removeClass('d-lg-block');
 		$('.hoston__nav--1').addClass('hoston__bg--1');
 		$('.hoston__nav--2').addClass('hoston__bg--2');
 		$('.hoston__nav--3').addClass('hoston__bg--3');
 	} 
 	else {
-		$('.scroll__top').fadeOut();
 		if ($(this).scrollTop() < 50 && (windowSize > 992)) { 
 			$('.header__top--info').addClass('d-lg-block');
 		}
