@@ -2311,6 +2311,63 @@ section {
   margin-right: 15px;
 }
 
+.comparison__table--pricing p {
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.comparison__table--pricing .table > :not(:first-child) {
+  border-top: transparent;
+}
+
+.comparison__table--pricing tbody > tr > td {
+  text-align: center;
+}
+
+.comparison__table--pricing tbody > tr > th {
+  width: 20%;
+}
+
+.comparison__table--pricing table > thead > tr > th:nth-child(2) {
+  color: #FFFFFF;
+  background-color: #F7421E;
+  text-align: center;
+}
+
+.comparison__table--pricing table > thead > tr > th:nth-child(3) {
+  background-color: #fcefe8;
+  text-align: center;
+}
+
+.comparison__table--pricing table > thead > tr > th:nth-child(4) {
+  background-color: #fcefe8;
+  text-align: center;
+}
+
+.comparison__table--pricing table > thead > tr > th:nth-child(5) {
+  background-color: #fcefe8;
+  text-align: center;
+}
+
+.comparison__table--pricing table > thead > tr > th:last-child {
+  border-right-width: 0px;
+}
+
+.comparison__table--pricing table > tbody > tr > td:last-child {
+  border-right-width: 0px;
+}
+
+.comparison__table--pricing .table > :not(caption) > * > * {
+  border-bottom-width: 0px;
+  border-right-width: 1px;
+  padding: 15px;
+}
+
+.comparison__table--pricing .table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: rgba(0,0,0,0.03);
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 25px;
