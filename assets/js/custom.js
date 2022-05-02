@@ -1,16 +1,20 @@
 
-
-// Scroll icon visible
+// Scroll function with menu and topbar
 $(window).scroll(function() {
-	if ($(this).scrollTop() > 50) {
+	var windowSize = $(window).width();
+
+	if ($(this).scrollTop() > 50 && (windowSize > 992)) {
 		$('.scroll__top').fadeIn();
-		$('.header__top--info').addClass('d-none');
+		$('.header__top--info').removeClass('d-lg-block');
 		$('.hoston__nav--1').addClass('hoston__bg--1');
 		$('.hoston__nav--2').addClass('hoston__bg--2');
 		$('.hoston__nav--3').addClass('hoston__bg--3');
-	} else {
+	} 
+	else {
 		$('.scroll__top').fadeOut();
-		$('.header__top--info').removeClass('d-none');
+		if ($(this).scrollTop() < 50 && (windowSize > 992)) { 
+			$('.header__top--info').addClass('d-lg-block');
+		}
 		$('.hoston__nav--1').removeClass('hoston__bg--1');
 		$('.hoston__nav--2').removeClass('hoston__bg--2');
 		$('.hoston__nav--3').removeClass('hoston__bg--3');

@@ -858,15 +858,14 @@ section {
         &::before {
             content: url(../svg/service-top.svg);
             position: absolute;
-            top: -55px;
-            left: -55px;
+            top: -35px;
+            left: 0px;
         }
         &::after {
             content: url(../svg/service-bottom.svg);
             position: absolute;
-            bottom: -100px;
-            right: -85px;
-            z-index: -20;
+            bottom: -60px;
+            right: 0px;
         }                        
     }
     &--anchor {
