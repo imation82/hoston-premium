@@ -2067,6 +2067,35 @@ section {
     background-color: $background-03;
 }
 
+// Inner pages - VPS hosting
+
+.vps__header {
+    @extend .header;
+    background-image: url(../svg/hero-bg-v4.svg);
+    h1 {
+        color: $white;
+    }
+    p {
+        @include fontStyle('Fira Sans', 16px, 400, 35px);
+        color: $white;
+        opacity: 0.8;
+    }  
+    &--lists {
+        padding-left: 15px;
+        li {
+            color: $white;
+        }        
+    }
+}
+
+.vps__hosting.why__love {
+    background-color: $background-01;
+}
+
+.vps__hosting.inner__faq {
+    background-color: $background-02;
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
@@ -2104,7 +2133,23 @@ section {
         p { 
             @include fontStyle(null, 15px, null, 25px); 
         }        
-    }    
+    } 
+    .vps__header.header {
+        h1 { 
+            @include fontStyle(null, 25px, null, 40px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 25px); 
+        }        
+    }
+    .web__header.header {
+        h1 { 
+            @include fontStyle(null, 25px, null, 40px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 25px); 
+        }        
+    }        
     .search {
         padding: 20px;
     }
@@ -2247,7 +2292,23 @@ section {
         p { 
             @include fontStyle(null, 15px, null, 30px); 
         }        
-    }    
+    }
+    .web__header.header {
+        h1 { 
+            @include fontStyle(null, 30px, null, 45px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 30px); 
+        }        
+    }
+    .vps__header.header {
+        h1 { 
+            @include fontStyle(null, 30px, null, 45px); 
+        }
+        p { 
+            @include fontStyle(null, 15px, null, 30px); 
+        }        
+    }          
     .statistics {
         padding-top: 60px;
         padding-bottom: 60px;

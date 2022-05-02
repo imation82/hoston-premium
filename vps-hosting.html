@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoston - Web Hosting</title>
+    <title>Hoston - VPS Hosting</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
@@ -31,7 +31,7 @@
 <body>
 
     <!-- header -->
-    <header class="web__header header d-flex align-items-center">
+    <header class="vps__header header d-flex align-items-center">
         <div class="header__top">
             <div class="header__top--info">
                 <div class="container">
@@ -156,232 +156,153 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="mb-4">Fast, secure hosting including a domain</h1>
-                    <p class="mb-4">Enjoy unparalleled speed, security and support</p>
-                    <ul class="wordpress__header--lists">
-                        <li>Flexible, easy to use control panel</li>
-                        <li>Unmetered subdomain, accounts</li>
-                        <li>99.99% uptime guarantee</li>
-                    </ul>
-                    <a href="#" class="mt-3 btn btn-hoston-primary">Get started</a>                   
+                    <h1 class="mb-4">Be in full control with VPS hosting</h1>
+                    <p class="mb-4">Get the power, flexibility and speed you need with our virtual private server hosting.</p>
+                    <a href="#" class="btn btn-hoston-primary">Get started</a>                   
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/svg/web-hosting.svg" class="mt-4 mt-lg-0 img-fluid d-block mx-auto" alt="Web">
+                    <img src="assets/svg/vps-hosting-hero.svg" class="mt-4 mt-lg-0 img-fluid d-block mx-auto" alt="Reseller">
                 </div>
             </div>
         </div>
     </header>
     <!-- end: header -->
 
-    <!-- plan -->
-    <section class="hoston-3-plan">
+    <!-- packages -->
+    <section class="packages">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <div class="section__style--2">
+                    <div class="section__style--1">
                         <h2 class="mb-4">
-                            <span class="section__dot d-inline-block d-md-none">..</span>Choose your plan
+                            <span class="section__dot d-inline-block d-md-none">..</span>Choose the perfect plan
                         </h2>
                         <div class="sub-title mx-auto">
                             <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's.</p>
                         </div>
                     </div>    
-                </div>                
-            </div>            
-        </div>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-12 text-center">              
-                    <div class="form-check form-switch d-flex align-items-center justify-content-center">
-                        <h4 class="mb-0">Monthly</h4>
-                        <input class="mx-3 form-check-input" type="checkbox" id="price__table" onclick="check()">
-                        <h4 class="mb-0">Yearly</h4>
-                      </div>                    
                 </div>
-            </div>    
+            </div>
             <div class="row mt-5">
                 <div class="col-lg-4">
-                    <div class="table__block mb-3 mb-lg-0">
-                        <div class="table__block--inner">
-                            <h3>Shared Hosting</h3>
-                            <p>The perfect table for a simple website and one domain name.</p>
-                            <div class="table__block--bottom mt-3">
-                                <h4>Starting at</h4>
-                                <div class="table__block--price mb-3 table__block--month">
+                    <div class="packages__block mb-3 mb-lg-0">
+                        <span class="packages__popular">Most Popular</span>
+                        <h3>Shared Hosting</h3>
+                        <p class="packages__block--description">The perfect plan for a simple website and one domain name.</p>
+                        <div class="packages__bottom mt-3">
+                            <h4>Starting at</h4>
+                                <div class="packages__block--price mb-3">
                                     <span>$3.55</span>
-                                    <small>/month*</small>
+                                    <small>/mo*</small>
                                 </div>
-                                <div class="table__block--price mb-3 table__block--year">
-                                    <span>$42.6</span>
-                                    <small>/year*</small>
-                                </div>                                
-                            </div>                                                          
+                                <select class="form-select form-control">
+                                    <option value="1" selected>Billed $85.20 for 24 month</option>
+                                    <option value="2">Billed $42.60 for 12 month</option>
+                                    <option value="3">Billed $21.30 for 6 month</option>
+                                </select>
+                                <a href="#" class="btn btn-hoston-black my-4 d-block">Buy Now</a>
+                                <div class="packages__block--detail">
+                                    <div class="collapse" id="packages__block--details1">
+                                        <div class="packages__block--lists">
+                                            <ul class="list-unstyled">
+                                                <li>Unlimited websites</li>
+                                                <li>Unlimited storage</li>
+                                                <li>Scalable bandwidth</li>
+                                                <li>25 MySQL databases</li>
+                                                <li>25 FTP logins</li>
+                                                <li>Free SSL certificate by Let's Encrypt</li>
+                                                <li>Free domain for the first year</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="package-btn text-center">
+                                        <a class="btn-hoston-link-2 all-features" data-bs-toggle="collapse" href="#packages__block--details1" role="button" aria-expanded="false"> See all features </a>
+                                    </div>
+                                </div>
                         </div>
-                        <ul class="list-unstyled table__block--lists">
-                            <li>Basic support</li>
-                            <li>Unlimited disk storage</li>
-                            <li>Scalable bandwidth</li>
-                            <li>5 FTP users</li>
-                            <li>10 MySQL databases</li>
-                            <li>Unlimited subdomains</li>
-                            <li>Free SSL certificate</li>
-                        </ul>
-                        <div class="table__block--btn">
-                            <a href="#" class="btn btn-hoston-primary my-4 ">Buy Now</a>
-                        </div>                         
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="table__block mb-3 mb-lg-0">
-                        <div class="table__block--inner2">
-                            <h3>VPS Hosting</h3>
-                            <p>The perfect table for a simple website and one domain name.</p>
-                            <div class="table__block--bottom mt-3">
-                                <h4>Starting at</h4>
-                                <div class="table__block--price mb-3 table__block--month">
-                                    <span>$8.55</span>
-                                    <small>/month*</small>
+                    <div class="packages__block mb-3 mb-lg-0">
+                        <h3>VPS</h3>
+                        <p class="packages__block--description">The perfect plan for a simple website and one domain name.</p>
+                        <div class="packages__bottom mt-3">
+                            <h4>Starting at</h4>
+                                <div class="packages__block--price mb-3">
+                                    <span>$3.55</span>
+                                    <small>/mo*</small>
                                 </div>
-                                <div class="table__block--price mb-3 table__block--year">
-                                    <span>$102.6</span>
-                                    <small>/year*</small>
-                                </div>                                
-                            </div>                           
+                                <select class="form-select form-control">
+                                    <option value="1" selected>Billed $85.20 for 24 month</option>
+                                    <option value="2">Billed $42.60 for 12 month</option>
+                                    <option value="3">Billed $21.30 for 6 month</option>
+                                </select>
+                                <a href="#" class="btn btn-hoston-primary my-4 d-block">Buy Now</a>
+                                <div class="packages__block--detail">
+                                    <div class="collapse" id="packages__block--details2">
+                                        <div class="packages__block--lists">
+                                            <ul class="list-unstyled">
+                                                <li>Unlimited websites</li>
+                                                <li>Unlimited storage</li>
+                                                <li>Scalable bandwidth</li>
+                                                <li>25 MySQL databases</li>
+                                                <li>25 FTP logins</li>
+                                                <li>Free SSL certificate by Let's Encrypt</li>
+                                                <li>Free domain for the first year</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="package-btn text-center">
+                                        <a class="btn-hoston-link-2 all-features" data-bs-toggle="collapse" href="#packages__block--details2" role="button" aria-expanded="false"> See all features </a>
+                                    </div>
+                                </div>
                         </div>
-                        <ul class="list-unstyled table__block--lists">
-                            <li>Premium support</li>
-                            <li>Unlimited disk storage</li>
-                            <li>Scalable bandwidth</li>
-                            <li>5 FTP users</li>
-                            <li>10 MySQL databases</li>
-                            <li>Unlimited subdomains</li>
-                            <li>Free SSL certificate</li>
-                        </ul> 
-                        <div class="table__block--btn">
-                            <a href="#" class="btn btn-hoston-primary my-4 ">Buy Now</a>
-                        </div>                                                 
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="table__block mb-3 mb-lg-0">
-                        <div class="table__block--inner3">
-                            <h3>Dedicated</h3>
-                            <p>The perfect table for a simple website and one domain name.</p>
-                            <div class="table__block--bottom mt-3">
-                                <h4>Starting at</h4>
-                                <div class="table__block--price mb-3 table__block--month">
-                                    <span>$10.55</span>
-                                    <small>/month*</small>
+                    <div class="packages__block mb-3 mb-lg-0">
+                        <h3>Dedicated</h3>
+                        <p class="packages__block--description">The perfect plan for a simple website and one domain name.</p>
+                        <div class="packages__bottom mt-3">
+                            <h4>Starting at</h4>
+                                <div class="packages__block--price mb-3">
+                                    <span>$3.55</span>
+                                    <small>/mo*</small>
                                 </div>
-                                <div class="table__block--price mb-3 table__block--year">
-                                    <span>$126.6</span>
-                                    <small>/year*</small>
-                                </div>                                
-                            </div>                           
+                                <select class="form-select form-control">
+                                    <option value="1" selected>Billed $85.20 for 24 month</option>
+                                    <option value="2">Billed $42.60 for 12 month</option>
+                                    <option value="3">Billed $21.30 for 6 month</option>
+                                </select>
+                                <a href="#" class="btn btn-hoston-black my-4 d-block">Buy Now</a>
+                                <div class="packages__block--detail">
+                                    <div class="collapse" id="packages-block-details-3">
+                                        <div class="packages__block--lists">
+                                            <ul class="list-unstyled">
+                                                <li>Unlimited websites</li>
+                                                <li>Unlimited storage</li>
+                                                <li>Scalable bandwidth</li>
+                                                <li>25 MySQL databases</li>
+                                                <li>25 FTP logins</li>
+                                                <li>Free SSL certificate by Let's Encrypt</li>
+                                                <li>Free domain for the first year</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="package-btn text-center">
+                                        <a class="btn-hoston-link-2 all-features" data-bs-toggle="collapse" href="#packages-block-details-3" role="button" aria-expanded="false"> See all features </a>
+                                    </div>
+                                </div>
                         </div>
-                        <ul class="list-unstyled table__block--lists">
-                            <li>Facebook ads</li>
-                            <li>Unlimited disk storage</li>
-                            <li>Scalable bandwidth</li>
-                            <li>5 FTP users</li>
-                            <li>10 MySQL databases</li>
-                            <li>Unlimited subdomains</li>
-                            <li>Free SSL certificate</li>
-                        </ul> 
-                        <div class="table__block--btn">
-                            <a href="#" class="btn btn-hoston-primary my-4 ">Buy Now</a>
-                        </div>                                                 
-                    </div>                    
+                    </div>
                 </div>
             </div>            
         </div>
-    </section>
-    <!-- end: plan -->  
-    
-    <!-- quality -->
-    <section class="high__quality">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="row justify-content-center align-items-center mt-2">
-                        <div class="col-lg-6 col-12 order-4 order-lg-0">
-                            <h2 class="mb-4">Feature-rich web hosting</h2>
-                            <p>You need powerful web hosting. A variety of premium features optimized for the best performance will make your websites really fast.</p>
-                            <a href="#" class="btn btn-hoston-primary mt-4">Learn more</a>
-                        </div>                           
-                        <div class="col-lg-6 col-12 order-3 order-lg-0">
-                            <img src="assets/images/web-hosting.png" class="img-fluid d-block mx-auto" alt="Hosting">
-                        </div>                     
-                    </div>                    
-                    <div class="row justify-content-center align-items-center mt-5">
-                        <div class="col-lg-6 col-12 order-1 order-lg-0">
-                            <img src="assets/images/wordpress-hosting.png" class="img-fluid d-block mx-auto" alt="Hosting">
-                        </div>
-                        <div class="col-lg-6 col-12 order-2 order-lg-0">
-                            <h2 class="mb-4">WordPress website hosting</h2>
-                            <p>You need powerful web hosting. A variety of premium features optimized for the best performance will make your websites really fast.</p>
-                            <a href="#" class="btn btn-hoston-primary mt-4">Learn more</a>
-                        </div>                        
-                    </div>                    
-                </div>
-            </div>
-        </div>        
-    </section>
-    <!-- end: quality -->
-
-    <!-- plan -->
-    <section class="plan">
-        <div class="container overflow-hidden">
-            <div class="row gx-5">
-                <div class="col-lg-5">
-                    <img src="assets/images/plan.png" class="img-fluid rounded d-block mx-auto mb-4 mb-sm-4 mb-lg-0" alt="Plan">
-                </div>
-                <div class="col-lg-7">
-                    <h2 class="mb-4">Get fast and reliable cPanel hosting</h2>
-                    <p class="mb-4">Each Linux plan includes:</p>
-                    <div class="accordion" id="plan">
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="heading-1">
-                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#plan01">What is web hosting?</button>
-                            </h4>
-                            <div id="plan01" class="accordion-collapse collapse" data-bs-parent="#plan">
-                                <div class="card-body">
-                                    <p>Everything you need to build a stunning website from one easy-to-access location. Some quick example text to build on the card title and the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="heading-2">
-                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#plan02">How do I buy a domain name?</button>
-                            </h4>
-                            <div id="plan02" class="accordion-collapse collapse" data-bs-parent="#plan">
-                                <div class="card-body">
-                                    <p>Everything you need to build a stunning website from one easy-to-access location. Some quick example text to build on the card title and the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="heading-3">
-                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#plan03">How does web hosting service work?</button>
-                            </h4>
-                            <div id="plan03" class="accordion-collapse collapse" data-bs-parent="#plan">
-                                <div class="card-body">
-                                    <p>Everything you need to build a stunning website from one easy-to-access location. Some quick example text to build on the card title and the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end: plan -->
-    
+    </section>    
+    <!-- end: packages -->  
+       
     <!-- why love hoston -->
-    <section class="web__hosting why__love">
+    <section class="vps__hosting why__love">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -479,8 +400,8 @@
             </div>
         </div>            
     </section>
-    <!-- end: why love hoston -->   
-    
+    <!-- end: why love hoston -->
+
     <!-- support -->
     <section class="domains__search hoston-3-support">
         <figure class="stay__ornaments">
@@ -504,29 +425,10 @@
             </div>
         </div>
     </section>
-    <!-- end: support -->
-
-    <!-- package comparison -->
-    <section class="package__comparison">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section__style--1">
-                        <h2 class="mb-4">
-                            <span class="section__dot d-inline-block d-md-none">..</span>Hoston head to head comparison
-                        </h2>
-                        <div class="sub-title mx-auto">
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's.</p>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end: package comparison -->
+    <!-- end: support -->  
     
     <!-- F.A.Q -->
-    <section class="web__hosting inner__faq hoston-faq-2 position-relative">
+    <section class="vps__faq inner__faq hoston-faq-2 position-relative">
         <figure class="faq__ornaments">
             <img class="faq__ornaments--top d-none d-md-block" src="assets/svg/faq-top.svg" alt="FAQ">            
             <img class="faq__ornaments--bottom d-none d-md-block" src="assets/svg/faq-bottom.svg" alt="FAQ">
@@ -600,7 +502,7 @@
             </div>            
         </div>
     </section>
-    <!-- end: F.A.Q -->       
+    <!-- end: F.A.Q -->      
 
     <!-- footer -->
     <footer id="hoston-3-footer" class="footer footer3 position-relative">
