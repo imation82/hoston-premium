@@ -44,6 +44,40 @@ p {
 
 // Common
 
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    @include fontStyle('Fira Sans', 16px, 400, 24px);
+    color: $black-400;
+    font-size: 16px;
+    line-height: 20px;
+    background: transparent;
+}
+.irs--flat .irs-single {
+    @include fontStyle('Fira Sans', 16px, 400, 24px);
+    color: $primary;
+    box-shadow: 0px 25px 60px -5px rgba(33,40,51,1);
+    font-size: 16px;
+    padding: 4px 8px;
+    top: -18px;
+    background-color: white;
+    border: 1px solid white;
+}
+.irs--flat .irs-single:before {
+    bottom: -7px;
+    border-top-color: white;
+}
+.irs--flat .irs-handle {
+    width: 20px;
+    height: 20px;
+    background: $white;
+    border-radius: 20px;
+    border: 5px solid $primary;
+}
+.irs--flat .irs-handle > i:first-child {
+    width: 0;
+    background: $primary;
+}
 .form-switch .form-check-input {
     width: 4em;
 }
@@ -2088,6 +2122,11 @@ section {
     }
 }
 
+.order {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .vps__hosting.why__love {
     background-color: $background-01;
 }
@@ -2095,6 +2134,28 @@ section {
 .vps__hosting.inner__faq {
     background-color: $background-02;
 }
+
+.order__summary {
+    max-width: 1070px;
+    margin-top: -130px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background: $white;
+    box-shadow: 0px 25px 60px -5px rgba(33,40,51,0.12);
+    border-radius: 10px;  
+    &--spec {
+        background: #F7F7F7;
+        border-radius: 5px;
+        padding: 20px;        
+    }
+    &--price {
+        @include fontStyle('Fira Sans', 20px, 400, null);
+        color: $primary;
+        margin-right: 15px;
+    }  
+}
+
 
 // Media queries
 
@@ -2149,7 +2210,10 @@ section {
         p { 
             @include fontStyle(null, 15px, null, 25px); 
         }        
-    }        
+    } 
+    .order__summary {
+        padding: 40px 10px;
+    }       
     .search {
         padding: 20px;
     }

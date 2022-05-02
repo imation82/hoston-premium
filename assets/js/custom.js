@@ -204,4 +204,12 @@ $( document ).ready( function() {
 		}
 	});	
 
+	// Order range slider
+	$("#order-range-slider").ionRangeSlider({
+		min: 10,
+		max: 200,
+		from: 100,
+		prefix: "$",
+	});	
+
  });

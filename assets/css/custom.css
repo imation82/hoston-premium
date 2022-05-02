@@ -56,6 +56,51 @@ p {
   margin: 0;
 }
 
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #909192;
+  font-size: 16px;
+  line-height: 20px;
+  background: transparent;
+}
+
+.irs--flat .irs-single {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #F7421E;
+  -webkit-box-shadow: 0px 25px 60px -5px #212833;
+          box-shadow: 0px 25px 60px -5px #212833;
+  font-size: 16px;
+  padding: 4px 8px;
+  top: -18px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.irs--flat .irs-single:before {
+  bottom: -7px;
+  border-top-color: white;
+}
+
+.irs--flat .irs-handle {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 5px solid #F7421E;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  width: 0;
+  background: #F7421E;
+}
+
 .form-switch .form-check-input {
   width: 4em;
 }
@@ -2228,12 +2273,43 @@ section {
   color: #FFFFFF;
 }
 
+.order {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .vps__hosting.why__love {
   background-color: #F8F9F9;
 }
 
 .vps__hosting.inner__faq {
   background-color: #F0FAE6;
+}
+
+.order__summary {
+  max-width: 1070px;
+  margin-top: -130px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+          box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+  border-radius: 10px;
+}
+
+.order__summary--spec {
+  background: #F7F7F7;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.order__summary--price {
+  font-family: "Fira Sans";
+  font-size: 20px;
+  font-weight: 400;
+  color: #F7421E;
+  margin-right: 15px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -2287,6 +2363,9 @@ section {
   .web__header.header p, .web__header#hoston-2 p, .web__header#hoston-3 p, .web__header.about__header p, .web__header.reseller__header p, .web__header.wordpress__header p, .web__header p, .web__header.vps__header p {
     font-size: 15px;
     line-height: 25px;
+  }
+  .order__summary {
+    padding: 40px 10px;
   }
   .search {
     padding: 20px;
