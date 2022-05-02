@@ -81,7 +81,7 @@ p {
 .form-switch .form-check-input {
     width: 4em;
 }
-.form-check-input {
+.form-check-input.price__table {
     height: 2em;
     border: 1px solid $primary;
     &:focus {
@@ -89,7 +89,7 @@ p {
     }
     background-image: url(../svg/toggle-circle.svg) !important;
 }
-.form-check-input:checked {
+.form-check-input.price__table:checked {
     background-color: $white;
     border-color: $primary;
 }

@@ -105,17 +105,17 @@ p {
   width: 4em;
 }
 
-.form-check-input {
+.form-check-input.price__table {
   height: 2em;
   border: 1px solid #F7421E;
   background-image: url(../svg/toggle-circle.svg) !important;
 }
 
-.form-check-input:focus {
+.form-check-input.price__table:focus {
   border-color: #F7421E;
 }
 
-.form-check-input:checked {
+.form-check-input.price__table:checked {
   background-color: #FFFFFF;
   border-color: #F7421E;
 }
