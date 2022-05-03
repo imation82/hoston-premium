@@ -299,10 +299,10 @@
                             <div class="col-lg-6">
                                 <div class="d-flex align-items-center gap-3 mt-4">
                                     <div class="input-group stay__input">
-                                        <input type="text" class="form-control" id="demo" placeholder="mail@example.com">
-                                        <div class="input-group-prepend">
-                                          <input type="submit" value="submit" class="btn btn-hoston-primary" id="demo2">
-                                        </div>
+                                        <form id="mc-form">
+                                            <input id="mc-email" class="form-control" type="email" placeholder="email address" />
+                                            <button class="btn" type="submit">Submit</button><label for="mc-email"></label>
+                                        </form>
                                     </div>
                                 </div>                                 
                             </div>
@@ -572,6 +572,8 @@
     <script src="assets/js/jquery.vmap.sampledata.js"></script>  
     <!-- ion rangeSlider -->
     <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- ajaxchimp -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/custom.js"></script>
     
