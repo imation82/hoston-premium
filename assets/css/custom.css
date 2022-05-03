@@ -101,6 +101,10 @@ p {
   background: #F7421E;
 }
 
+.form-switch.price__switch {
+  padding-left: 0;
+}
+
 .form-switch .form-check-input {
   width: 4em;
 }
@@ -2419,6 +2423,12 @@ section {
   .web__header.header p, .web__header#hoston-2 p, .web__header#hoston-3 p, .web__header.about__header p, .web__header.reseller__header p, .web__header.wordpress__header p, .web__header p, .web__header.vps__header p {
     font-size: 15px;
     line-height: 25px;
+  }
+  .inner__faq {
+    padding-bottom: 40px;
+  }
+  .domains__search.faq {
+    padding-bottom: 40px;
   }
   .order__summary {
     padding: 40px 10px;

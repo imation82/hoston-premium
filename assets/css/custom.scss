@@ -78,6 +78,9 @@ p {
     width: 0;
     background: $primary;
 }
+.form-switch.price__switch {
+    padding-left: 0;
+}
 .form-switch .form-check-input {
     width: 4em;
 }
@@ -2259,6 +2262,12 @@ section {
             @include fontStyle(null, 15px, null, 25px); 
         }        
     } 
+    .inner__faq {
+        padding-bottom: 40px;
+    }
+    .domains__search.faq {
+        padding-bottom: 40px;
+    }    
     .order__summary {
         padding: 40px 10px;
     }       
