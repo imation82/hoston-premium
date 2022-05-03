@@ -676,8 +676,8 @@ section {
   color: #F7421E;
 }
 
-.testimonials__author--info {
-  gap: 15px;
+.testimonials__author--info img {
+  margin-right: 15px;
 }
 
 .testimonials__author--details p {

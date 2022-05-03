@@ -621,7 +621,9 @@ section {
     }
     &__author {
         &--info {
-            gap: 15px;
+            img {
+                margin-right: 15px;
+            }
         }
         &--details {
             p {
