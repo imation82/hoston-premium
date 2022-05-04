@@ -219,7 +219,23 @@ $( document ).ready( function() {
 		prefix: "$",
 	});	
 
-	// Ajaxchimp
-	$("#mc-form").ajaxChimp({ url: "https://gmail.us13.list-manage.com/subscribe/post?u=01b03a1e9afe9bd1f4c0e35db&amp;id=e7a3549c37" });
+	$('#subscribe').submit(function() {
+		$("#message").html("Adding your email address...");
+		$.ajax({
+			url: '/assets/php/subscribe.php',
+			type: "POST",
+			data: $('#subscribe').serialize(),
+			success: function(msg) 
+			{
+				$('#message').html("<i class='fa fa-check'></i> Thanks for signing up!");
+			},
+			error: function(msg) 
+			{
+				$('#message').html("<span style='color: red;'><i class='fa fa-times'></i> Error. Please try again later.</span>");
+				console.log(arguments);
+			}
+		});
+		return false;
+	});
 
  });
