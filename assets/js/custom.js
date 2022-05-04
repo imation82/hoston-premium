@@ -223,7 +223,7 @@ $( document ).ready( function() {
 		$("#message").html("Adding your email address...");
 		$.ajax({
 			url: '/assets/php/subscribe.php',
-			type: "POST",
+			method: "GET",
 			data: $('#subscribe').serialize(),
 			success: function(msg) 
 			{
