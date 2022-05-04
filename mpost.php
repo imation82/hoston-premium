@@ -52,5 +52,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 
-    header('location:about.html'.$msg);
+    return $httpCode;
 }
