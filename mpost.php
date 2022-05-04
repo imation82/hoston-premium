@@ -1,7 +1,7 @@
 <?php
 //API Details
-$apiKey = 'InsertMailChimpAPIKey';
-$listId = 'InsertMailChimpListID';
+$apiKey = 'fa0a1fd2959c3493cb5c29ef540684de-us13';
+$listId = 'e7a3549c37';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $firstname = $_POST['firstname'];
