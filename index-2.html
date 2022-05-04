@@ -539,14 +539,19 @@
                         <p>Get all the latest offers, articles, and industry news straight to your mailbox every month.</p>       
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="d-flex align-items-center gap-3 mt-4">
-                                    <div class="input-group stay__input">
-                                        <input type="text" class="form-control" id="demo" placeholder="mail@example.com">
-                                        <div class="input-group-prepend">
-                                          <input type="submit" value="submit" class="btn btn-hoston-primary" id="demo2">
+                                <form id="mc-form">
+                                    <div class="d-flex align-items-center gap-3 mt-4">
+                                        <div class="input-group stay__input">
+                                            <input type="email" class="form-control" id="mc-email" placeholder="mail@example.com">
+                                            <div class="input-group-prepend">
+                                                <input type="submit" value="submit" class="btn btn-hoston-primary" id="demo2">
+                                            </div>
                                         </div>
-                                      </div>
-                                </div>                                 
+                                    </div>
+                                    <div class="initialize mt-2">
+                                        <label for="mc-email"></label>
+                                    </div>                                      
+                                </form>                                
                             </div>
                         </div>                                              
                     </div>
@@ -896,6 +901,8 @@
 
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
+    <!-- jQuery ajaxchimp -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
     <!-- bootstrap bundle js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery waypoints -->

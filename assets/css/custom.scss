@@ -44,6 +44,35 @@ p {
 
 // Common
 
+#mc-form .form-control {
+    color: $black !important;
+}
+
+#mc-form .initialize {
+    color: #FF9898;
+}
+
+#mc-form .error {
+    color: #FF9898;
+    display: flex;
+    align-items: center;
+    &::before {
+        content: '\F313';
+        font-family: 'bootstrap-icons';
+        margin-right: 5px;
+    }
+}
+
+#mc-form .valid {
+    color: #87ff87;
+    display: flex;
+    align-items: center;
+    &::before {
+        content: '\F26B';
+        font-family: 'bootstrap-icons';
+        margin-right: 5px;
+    }
+}
 
 .irs--flat .irs-min,
 .irs--flat .irs-max {
@@ -912,6 +941,7 @@ section {
         }
         .form-control {
             border-radius: 2px;
+            height: 49px;
         }        
         input {
             &:focus {

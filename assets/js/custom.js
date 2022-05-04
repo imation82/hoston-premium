@@ -217,6 +217,11 @@ $( document ).ready( function() {
 		max: 200,
 		from: 100,
 		prefix: "$",
-	});	
+	});
+	
+	// Subscription
+	$('#mc-form').ajaxChimp({
+		url: 'https://gmail.us8.list-manage.com/subscribe/post?u=eeb15f901d282456d5231dda0&amp;id=06b7e3df0b'
+	});
 
  });
