@@ -297,14 +297,21 @@
                         <p>Get all the latest offers, articles, and industry news straight to your mailbox every month.</p>       
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="d-flex align-items-center gap-3 mt-4">
+                                <!-- <div class="d-flex align-items-center gap-3 mt-4">
                                     <div class="input-group stay__input">
                                         <input type="text" class="form-control" id="demo" placeholder="mail@example.com">
                                         <div class="input-group-prepend">
                                             <input type="submit" value="submit" class="btn btn-hoston-primary" id="demo2">
                                         </div>
                                     </div>
-                                </div>                                 
+                                </div>                                  -->
+                                <form id="signup" action="about.html" method="get">
+                                    First Name: <input type="text" name="fname" id="fname" />
+                                    Last Name: <input type="text" name="lname" id="lname" />
+                                    email Address (required): <input type="email" name="email" id="email" />
+                                    <input type="submit" id="SendButton" name="submit" value="Submit" />
+                                </form>
+                                <div id="message"></div>                                
                             </div>
                         </div>                                              
                     </div>
@@ -574,6 +581,29 @@
     <script src="assets/js/ion.rangeSlider.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#signup').submit(function() {
+                $("#message").html("Adding your email address...");
+                $.ajax({
+                    url: 'php/store.php', // proper url to your "store-address.php" file
+                    type: 'POST', // <- IMPORTANT
+                    data: $('#signup').serialize() + '&ajax=true',
+                    success: function(msg) {
+                        var message = $.parseJSON(msg),
+                            result = '';
+                        if (message.status === 'pending') { // success
+                            result = 'Success!  Please click the confirmation link that will be emailed to you shortly.';
+                        } else { // error
+                            result = 'Error: ' + message.detail;
+                        }
+                        $('#message').html(result); // display the message
+                    }
+                });
+                return false;
+            });
+        });
+        </script>
     
 </body>
 </html>
