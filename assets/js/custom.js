@@ -1,3 +1,11 @@
+// Loader
+
+$(window).on('load', function () {
+	$("#loader .icon").fadeOut();
+	$("#loader").slideUp("slow");    
+
+  });
+
 // Scroll function with menu, topbar, scroll top
 $(window).scroll(function() {
     $(window).scroll(function() {

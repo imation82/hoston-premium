@@ -2238,6 +2238,26 @@ section {
     }
 }
 
+#loader {
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+}
+
+#loader .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 // Media queries
 
 @media (min-width:320px) and (max-width:767px) {
