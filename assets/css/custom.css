@@ -2458,6 +2458,12 @@ section {
     font-size: 15px;
     line-height: 25px;
   }
+  .subfooter__block h3 {
+    font-family: "Jost";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+  }
   .wordpress__header.header h1, .wordpress__header#hoston-2 h1, .wordpress__header#hoston-3 h1, .wordpress__header.about__header h1, .wordpress__header.reseller__header h1, .wordpress__header h1, .wordpress__header.web__header h1, .wordpress__header.vps__header h1 {
     font-size: 25px;
     line-height: 40px;

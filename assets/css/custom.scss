@@ -2283,6 +2283,13 @@ section {
             }
         }
     }
+    .subfooter {
+        &__block {
+            h3 {
+                @include fontStyle('Jost', 25px, 500, 35px);
+            }
+        }
+    }
     .wordpress__header.header {
         h1 { 
             @include fontStyle(null, 25px, null, 40px); 
