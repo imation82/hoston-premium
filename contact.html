@@ -226,17 +226,17 @@
                     <div class="contact__info--form">
                         <h3>Get in touch</h3>
                         <p class="mb-4">Leave us a message</p>
-                        <form>
+                        <form id="contact__form">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" required="">
                                         <label for="name">Full Name *</label>
                                     </div>                                
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Email" required="">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
                                         <label for="email">Email *</label>
                                     </div>                                
                                 </div>                            
@@ -244,13 +244,13 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="company" placeholder="Company Name" required="">
+                                        <input type="text" class="form-control" name="company" id="company" placeholder="Company Name" required="">
                                         <label for="company">Company Name *</label>
                                     </div>                                
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="subject" placeholder="Subject" required="">
+                                        <input type="email" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
                                         <label for="subject">Subject *</label>
                                     </div>                                
                                 </div>                            
@@ -258,15 +258,20 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-floating">
-                                        <textarea class="textarea form-control" placeholder="Leave a comment here" id="comment" rows="3"></textarea>
+                                        <textarea class="textarea form-control" placeholder="Leave a comment here" name="comment" id="comment" rows="3"></textarea>
                                         <label for="comment">Message ...</label>
                                     </div>                                    
                                 </div>
                             </div> 
                             <div class="row mt-3 mb-2">
                                 <div class="col-12">
-                                    <button class="btn btn-hoston-primary" type="submit">Submit</button>
+                                    <button id="contact__form--submit" class="btn btn-hoston-primary" type="submit">Submit</button>
                                 </div>                                
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-12">
+                                    <div id="contact__form--info"></div>
+                                </div>
                             </div>                                                      
                         </form>
                     </div>
@@ -413,6 +418,8 @@
     <script src="assets/js/jquery.vmap.sampledata.js"></script>  
     <!-- ion rangeSlider -->
     <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- mail -->
+    <script src="assets/mail/mail.js"></script>
     <!-- custom js -->
     <script src="assets/js/custom.js"></script>
     
