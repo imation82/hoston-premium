@@ -2181,7 +2181,10 @@ section {
     &--spec {
         background: #F7F7F7;
         border-radius: 5px;
-        padding: 20px;        
+        padding: 20px;      
+        &-text {
+            margin-left: 10px;  
+        }
     }
     &--price {
         @include fontStyle('Fira Sans', 20px, 400, null);
@@ -2320,6 +2323,9 @@ section {
     }    
     .order__summary {
         padding: 40px 10px;
+        &--spec {
+            padding: 10px;
+        }
     }       
     .search {
         padding: 20px;

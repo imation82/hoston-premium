@@ -2348,6 +2348,10 @@ section {
   padding: 20px;
 }
 
+.order__summary--spec-text {
+  margin-left: 10px;
+}
+
 .order__summary--price {
   font-family: "Fira Sans";
   font-size: 20px;
@@ -2494,6 +2498,9 @@ section {
   }
   .order__summary {
     padding: 40px 10px;
+  }
+  .order__summary--spec {
+    padding: 10px;
   }
   .search {
     padding: 20px;
