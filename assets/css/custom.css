@@ -2591,6 +2591,9 @@ section {
   .contact__info--form {
     padding: 15px;
   }
+  .account__create {
+    padding: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
